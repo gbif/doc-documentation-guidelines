@@ -6,7 +6,7 @@ Guidelines for authoring GBIF documentation
 
 ### Available documents
 
-+ **Effective nodes guidance* 
++ **Effective nodes guidance** 
 [EN](https://github.com/gbif/doc-effective-nodes-guidance) | [ES]() | | [ES]() | | [PT]()
 + [Georeferencing Quick Guide](https://github.com/gbif/doc-georeferencing-quick-guide)
 + [Georeferencing Best Practices](https://github.com/gbif/doc-georeferencing-best-practices)
