@@ -1,0 +1,57 @@
+GBIF Documentation Guidelines
+-----------------------------
+
+.https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+image::1265538197-Cyperus-papyrus.jpg[Photograph of _Cyperus papyrus_ L.]
+
+Guidelines for authoring GBIF documentation.
+
+*Placeholder text, this document is not yet written!*
+
+Source code
+~~~~~~~~~~~
+
+Repositories are stored in GitHub, and the source code files can be edited within the Github interface, or on a computer (including when offline) using Git.  Many tutorials for using both Git and Github are available on the web.
+
+Files in the repository with the file extension `.adoc` are the source code for the document.  The file `index.adoc` is the index page, it must contain (usually with the `include` command) all parts of the document.
+
+Asciidoctor
+~~~~~~~~~~~
+
+The document is built using _Asciidoctor_, a document format which uses plain text formatting to describe the document's structure, and allow a style to be applied automatically.  For information on the syntax, see the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+
+Generating the document
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The source code in the document repositories is converted into the finished HTML and PDF documents using the _Asciidoctor_ tool.  Every time a change is made to a repository, the GBIF build server is notified.  It retrieves the source code, generates the documents, and copies the formatted documents to a webserver.
+
+A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you will need to inspect the log file to see what the problem is.
+
+Local document build
+^^^^^^^^^^^^^^^^^^^^
+
+If you are familiar with software development tools, you can build a document on your own computer – this is useful for previewing changes.  You can build the HTML document with this command, run from the top level directory:
+
+`+docker run -it -v $PWD:/documents/ asciidoctor/docker-asciidoctor asciidoctor index.adoc+`
+
+To create the PDF document, use `asciidoctor-pdf` rather than `asciidoctor`.  The result is called either `index.html` or `index.pdf`.
+
+Available documents
+~~~~~~~~~~~~~~~~~~~
+
+* *Effective nodes guidance* https://github.com/gbif/doc-effective-nodes-guidance[EN] | link:#[ES] | | link:#[ES] | | link:#[PT]
+* https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing Quick Guide]
+* https://github.com/gbif/doc-georeferencing-best-practices[Georeferencing Best Practices]
+* https://github.com/gbif/doc-sensitive-species-treatment[Sensitive Species Treatment]
+* *OpenRefine Guide*: https://github.com/gbif/doc-openrefine-guide[EN] | link:#[ES]
+* https://github.com/gbif/doc-georeferencing-calculator[Georeferencing calculator]
+
+Planned documents
+~~~~~~~~~~~~~~~~~
+
+* *GBIF Communications Strategy*: link:#[EN] | link:#[PT]
+
+New documents
+~~~~~~~~~~~~~
+
+https://github.com/gbif/doc-template[doc-template]: The template repository to clone for new documentation projects

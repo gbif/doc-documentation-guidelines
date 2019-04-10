@@ -1,0 +1,10 @@
+GBIF Documentation Guidelines
+-----------------------------
+
+_This is information *about* this document's source code.  It is not part of the document._
+
+The document is available in a temporary location as https://labs.gbif.org/documents/documentation-guidelines/[HTML] and https://labs.gbif.org/documents/documentation-guidelines/index.pdf[PDF].
+
+The build status is https://builds.gbif.org/job/doc-documentation-guidelines/[image:https://builds.gbif.org/job/doc-documentation-guidelines/badge/icon[Build status]]
+
+See https://labs.gbif.org/documents/documentation-guidelines/[the generated document] for the guidelines (or read the source files in this repository).
