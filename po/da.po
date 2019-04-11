@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-04-11 09:08+0200\n"
-"PO-Revision-Date: 2019-04-11 09:36+0200\n"
+"PO-Revision-Date: 2019-04-11 09:48+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -52,7 +52,7 @@ msgstr "Retningslinjer for oprettelse af GBIF-dokumentation."
 #: index.adoc:9
 #, no-wrap
 msgid "*Placeholder text, this document is not yet written!*\n"
-msgstr "*Stedholdertekst, dette dokument er endnu ikke skrevet*"
+msgstr "*Stedholdertekst, dette dokument er endnu ikke skrevet*\n"
 
 #. type: Title ==
 #: index.adoc:10
@@ -159,7 +159,7 @@ msgid ""
 "*Effective nodes guidance* "
 "https://github.com/gbif/doc-effective-nodes-guidance[EN] | link:#[ES] | | "
 "link:#[ES] | | link:#[PT]\n"
-msgstr "*Effektiv noder vejledning* https://github.com/gbif/doc-effective-nodes-guidance[EN] | link:#[ES] | | link:#[ES] | | link:#[PT]"
+msgstr "*Effektiv noder vejledning* https://github.com/gbif/doc-effective-nodes-guidance[EN] | link:#[ES] | | link:#[ES] | | link:#[PT]\n"
 
 #. type: Plain text
 #: index.adoc:38
@@ -167,7 +167,7 @@ msgstr "*Effektiv noder vejledning* https://github.com/gbif/doc-effective-nodes-
 msgid ""
 "https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing Quick "
 "Guide]\n"
-msgstr "https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing hurtig guide]"
+msgstr "https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing hurtig guide]\n"
 
 #. type: Plain text
 #: index.adoc:39
