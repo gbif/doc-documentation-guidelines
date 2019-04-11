@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-04-11 09:08+0200\n"
+"PO-Revision-Date: 2019-04-11 09:36+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: index.adoc:1
+#, no-wrap
+msgid "GBIF Documentation Guidelines"
+msgstr "GBIF-dokumentationsretningslinjer"
+
+#. type: Block title
+#: index.adoc:3
+#, no-wrap
+msgid ""
+"https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed "
+"in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed "
+"under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
+msgstr "https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observeret i Mexico af Alfonso Gutiérrez Aldana.  Foto (via iNaturalist) licenseret under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: index.adoc:4
+#, no-wrap
+msgid "Photograph of _Cyperus papyrus_ L."
+msgstr "Foto af _Cyperus papyrus_ L."
+
+#. type: Target for macro image
+#: index.adoc:4
+#, no-wrap
+msgid "1265538197-Cyperus-papyrus.jpg"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:7
+msgid "Guidelines for authoring GBIF documentation."
+msgstr "Retningslinjer for oprettelse af GBIF-dokumentation."
+
+#. type: Plain text
+#: index.adoc:9
+#, no-wrap
+msgid "*Placeholder text, this document is not yet written!*\n"
+msgstr "*Stedholdertekst, dette dokument er endnu ikke skrevet*"
+
+#. type: Title ==
+#: index.adoc:10
+#, no-wrap
+msgid "Source code"
+msgstr "Kildekode"
+
+#. type: Plain text
+#: index.adoc:13
+msgid ""
+"Repositories are stored in GitHub, and the source code files can be edited "
+"within the Github interface, or on a computer (including when offline) using "
+"Git.  Many tutorials for using both Git and Github are available on the web."
+msgstr "Opbevaringssteder gemmes i GitHub, og kildekodefilerne kan redigeres i Github-grænsefladen eller på en computer (herunder når offline) ved hjælp af Git. Mange tutorials til brug af både Git og GitHub er tilgængelige på internettet."
+
+#. type: Plain text
+#: index.adoc:15
+msgid ""
+"Files in the repository with the file extension `.adoc` are the source code "
+"for the document.  The file `index.adoc` is the index page, it must contain "
+"(usually with the `include` command) all parts of the document."
+msgstr "Filer i depotet med filtypen `.adoc` er kildekoden for dokumentet. Filen `index.adoc` er indekssiden, den skal indeholde (som regel med kommandoen `include`) alle dele af dokumentet."
+
+#. type: Title ==
+#: index.adoc:16
+#, no-wrap
+msgid "Asciidoctor"
+msgstr "Asciidoctor"
+
+#. type: Plain text
+#: index.adoc:19
+msgid ""
+"The document is built using _Asciidoctor_, a document format which uses "
+"plain text formatting to describe the document's structure, and allow a "
+"style to be applied automatically.  For information on the syntax, see the "
+"https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual]."
+msgstr ""
+"Dokumentet er bygget ved hjælp af _Asciidoctor_, et dokumentformat, der bruger almindelig tekstformatering til at beskrive dokumentets struktur og tillade, at en stil anvendes automatisk. For information om syntak\\\n"
+"sen, se https://asciidoctor.org/docs/user-manual/[Asciidoctor Brugervejledning]."
+
+#. type: Title ==
+#: index.adoc:20
+#, no-wrap
+msgid "Generating the document"
+msgstr "Generering af dokumentet"
+
+#. type: Plain text
+#: index.adoc:23
+msgid ""
+"The source code in the document repositories is converted into the finished "
+"HTML and PDF documents using the _Asciidoctor_ tool.  Every time a change is "
+"made to a repository, the GBIF build server is notified.  It retrieves the "
+"source code, generates the documents, and copies the formatted documents to "
+"a webserver."
+msgstr "Kildekoden i dokumentarkiverne konverteres til de færdige HTML- og PDF-dokumenter ved hjælp af _Asciidoctor_-værktøjet. Hver gang en ændring er foretaget i et depot, bliver GBIF build-serveren underrettet. Den henter kildekoden, genererer dokumenterne og kopierer de formaterede dokumenter til en webserver."
+
+#. type: Plain text
+#: index.adoc:25
+msgid ""
+"A log file of recent builds is kept by the build server.  If there is a "
+"syntax error preventing the document from being generated, you will need to "
+"inspect the log file to see what the problem is."
+msgstr "En logfil af nyere bygninger opbevares af build-serveren. Hvis der er en syntaksfejl, der forhindrer dokumentet i at blive genereret, skal du inspicere logfilen for at se, hvad problemet er."
+
+#. type: Title ===
+#: index.adoc:26
+#, no-wrap
+msgid "Local document build"
+msgstr "Lokalt dokumentbygning"
+
+#. type: Plain text
+#: index.adoc:29
+msgid ""
+"If you are familiar with software development tools, you can build a "
+"document on your own computer – this is useful for previewing changes.  You "
+"can build the HTML document with this command, run from the top level "
+"directory:"
+msgstr "Hvis du er bekendt med softwareudviklingsværktøjer, kan du opbygge et dokument på din egen computer - dette er nyttigt til forhåndsvisning af ændringer. Du kan opbygge HTML-dokumentet med denne kommando, køre fra øverste niveau bibliotek:"
+
+#. type: Plain text
+#: index.adoc:31
+msgid ""
+"`+docker run -it -v $PWD:/documents/ asciidoctor/docker-asciidoctor "
+"asciidoctor index.adoc+`"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:33
+msgid ""
+"To create the PDF document, use `asciidoctor-pdf` rather than "
+"`asciidoctor`.  The result is called either `index.html` or `index.pdf`."
+msgstr "For at oprette PDF-dokumentet, brug `asciidoctor-pdf` snarere end` asciidoctor`. Resultatet hedder enten `index.html` eller `index.pdf`."
+
+#. type: Title ==
+#: index.adoc:34
+#, no-wrap
+msgid "Available documents"
+msgstr "Tilgængelige dokumenter"
+
+#. type: Plain text
+#: index.adoc:37
+#, no-wrap
+msgid ""
+"*Effective nodes guidance* "
+"https://github.com/gbif/doc-effective-nodes-guidance[EN] | link:#[ES] | | "
+"link:#[ES] | | link:#[PT]\n"
+msgstr "*Effektiv noder vejledning* https://github.com/gbif/doc-effective-nodes-guidance[EN] | link:#[ES] | | link:#[ES] | | link:#[PT]"
+
+#. type: Plain text
+#: index.adoc:38
+#, no-wrap
+msgid ""
+"https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing Quick "
+"Guide]\n"
+msgstr "https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing hurtig guide]"
+
+#. type: Plain text
+#: index.adoc:39
+#, no-wrap
+msgid ""
+"https://github.com/gbif/doc-georeferencing-best-practices[Georeferencing "
+"Best Practices]\n"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:40
+#, no-wrap
+msgid ""
+"https://github.com/gbif/doc-sensitive-species-treatment[Sensitive Species "
+"Treatment]\n"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:41
+#, no-wrap
+msgid ""
+"*OpenRefine Guide*: https://github.com/gbif/doc-openrefine-guide[EN] | "
+"link:#[ES]\n"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:42
+#, no-wrap
+msgid ""
+"https://github.com/gbif/doc-georeferencing-calculator[Georeferencing "
+"calculator]\n"
+msgstr ""
+
+#. type: Title ==
+#: index.adoc:43
+#, no-wrap
+msgid "Planned documents"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:46
+#, no-wrap
+msgid "*GBIF Communications Strategy*: link:#[EN] | link:#[PT]\n"
+msgstr ""
+
+#. type: Title ==
+#: index.adoc:47
+#, no-wrap
+msgid "New documents"
+msgstr ""
+
+#. type: Plain text
+#: index.adoc:49
+msgid ""
+"https://github.com/gbif/doc-template[doc-template]: The template repository "
+"to clone for new documentation projects"
+msgstr ""
