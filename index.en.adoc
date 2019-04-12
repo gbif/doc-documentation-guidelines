@@ -9,14 +9,14 @@ GBIF Secretariat <https://www.gbif.org/>
 ifdef::backend-html5[]
 .https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
 image::1265538197-Cyperus-papyrus.jpg[Photograph of _Cyperus papyrus_ L.]
-endif::[]
+endif::backend-html5[]
 
 [preface]
 == Background
 
 ifdef::backend-pdf[]
 Cover image: https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
-endif::[]
+endif::backend-pdf[]
 
 _**To be completed** GBIF has documentation etc, needs to be editable by multiple people, version controlled, translatable. Therefore, this system, etc._
 
