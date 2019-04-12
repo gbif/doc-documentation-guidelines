@@ -1,0 +1,127 @@
+= GBIF Documentation Guidelines
+GBIF Secretariat <https://www.gbif.org/>
+:toc: left
+:revnumber: 0.1-dev
+:revdate: {localdate}
+:title-logo-image: 1265538197-Cyperus-papyrus.jpg
+:icons: font
+
+ifdef::backend-html5[]
+.https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+image::1265538197-Cyperus-papyrus.jpg[Photograph of _Cyperus papyrus_ L.]
+endif::[]
+
+[preface]
+== Background
+
+ifdef::backend-pdf[]
+Cover image: https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+endif::[]
+
+_**To be completed** GBIF has documentation etc, needs to be editable by multiple people, version controlled, translatable. Therefore, this system, etc._
+
+include::available_documents.en.adoc[]
+
+== Guidelines for document authors
+
+Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in plain text files.  This means
+
+* Authors need not worry about maintaining a consistent style,
+* Changes to the document can be tracked and managed using general tools,
+* The same source files can produce multiple outputs automatically, such as HTML and PDF,
+* Document translations can be tracked.
+
+Of course, that does mean learning about some different tools — but the ones we have chosen are widely used in publishing, software development and translation communities.
+
+// Maybe this isn't the best word.
+=== Source code and versioning
+
+The plain text files and other assets (images, data tables) that form the document are the _source code_.
+
+These source files are stored in a _Git repository_, which (for GBIF) is managed by a commercial service, _GitHub_.
+The source code for this document is stored at https://github.com/gbif/doc-documentation-guidelines/, the source code for this part of the document can be seen https://raw.githubusercontent.com/gbif/doc-documentation-guidelines/master/index.adoc[here].
+
+The source code can be edited in a web browser using the GitHub interface, or on a computer (including when offline) using Git.
+
+NOTE: Many tutorials for using both Git and Github are available on the web.
+
+=== Asciidoctor
+
+The source code is written in a computer language called _Asciidoctor_, a type of _markup language_.  This means the format and structure of the document (such as headings and bold text) are applied using particular symbols visible in the source code.
+
+For example, the source code for the heading and first line of this section looks like this:
+
+```
+=== Asciidoctor
+
+The source code is written in a computer language called _Asciidoctor_
+```
+
+The `pass:[===]` prefix makes a third-level heading, and the underscore symbols surrounding `+_Asciidoctor_+` specify emphasized text — decisions such as the font or text size aren't part of the document.
+The document (or parts of it) is stored in files with the extension `.en.adoc`, files such as images have their usual extensions.
+The main document is called `index.en.adoc`.
+
+NOTE: For information on the syntax of Asciidoctor, see the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+
+=== Generating the document
+
+The source code in the repository is converted into the finished HTML and PDF documents using the _Asciidoctor_ tool.  Every time a change is made to the repository, the GBIF build server is notified.  It retrieves the source code, generates the document, and copies the formatted documents to a webserver.
+
+A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you may need to inspect the log file to see what the problem is.
+
+=== Local document build
+
+WARNING: This section isn't yet final, as the tools are still being developed.
+
+If you are familiar with software development tools, you can build a document on your own computer – this is useful for previewing changes.  You can build the HTML document with this command, run from the top level directory:
+
+`+docker run -it -v $PWD:/documents/ asciidoctor/docker-asciidoctor asciidoctor index.en.adoc+`
+
+To create the PDF document, use `asciidoctor-pdf` rather than `asciidoctor`.  The result is called either `index.en.html` or `index.en.pdf`.
+
+=== Further guidelines
+
+_We should perhaps include in this document:_
+
+* Handling issues in GitHub,
+* Handling pull requests,
+* Who to ask for help.
+
+== Guidelines for document translators
+
+The translation uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.  To translate a document into a new language, you will need to:
+
+. _[Should be automated]_ Update the `.pot` (_Portable Object Template_) file from the current English document
+.. For a new translation, copy this to the appropriate https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code], for example this would be `da.po` for a Danish translation.
+.. _[Should perhaps be automated]_ When updating a translation, use a po-file editor to update the existing translation using the po-template file.
+. Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
+. Replace the old translation file using Git/GitHub with your updated translation file.
+
+== Guidelines for software developers
+
+NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
+
+The documents combine several small Linux tools:
+
+* Git, for source control,
+* https://asciidoctor.org/[Asciidoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
+* https://po4a.org/[po4a], for translations,
+* https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
+* Docker, to ensure consistent builds,
+* Apache, to serve the finished documents.
+
+=== New documents
+
+New documents should be made by:
+. Cloning the https://github.com/gbif/doc-template[doc-template] repository, with a name beginning with `doc-`,
+. Adding a new job to Jenkins.
+
+=== Outstanding issues:
+
+. Automate keeping translation files up-to-date (i.e. with untranslated phrases included),
+. Apply a custom style to the document,
+. Demonstrate embedding an image, and alternative (translated) images,
+. Move the build script into a Docker image,
+. Update to the latest version of Asciidoctor,
+. Determine where the exported documents will be stored,
+. Decide a release process, possibly involving assigning DOIs.
