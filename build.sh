@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# Run in:
+#   docker run --rm -it -v $PWD:/documents/ asciidoctor/docker-asciidoctor:1.5.7.1
+
 # Enable the **/*.en.adoc below.
 shopt -s globstar
 # In case there are no translations.
@@ -16,7 +19,7 @@ for lang in translations/??.po; do
 done
 
 # Generate the output HTML and PDF.
-rm -f **/*.html **/*.pdf *.asis
+rm -f **/*.??.html **/*.??.pdf *.??.asis
 for lang in en translations/??.po; do
 	langcode=$(basename $lang .po)
 	mkdir -p $langcode
