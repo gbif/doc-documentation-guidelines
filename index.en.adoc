@@ -49,15 +49,15 @@ Each year, the EP will review available documentation and identify priority cand
 
 === Annual process
 
-.Annually, the EP shall prioritize documentation needs and make recommendations for calls for documentation when appropriate.
-.Calls will issued by GBIFS to the community when appropriate.
-.EP will review and make recommendations on documentation proposals.
-.GBIFS will draw and issue contract with authors/teams of experts.
-.Authors will compile first draft drawing on community input when appropriate and submit to EP.
-.EP will review drafts and provide comments back to authors.
-.Authors will revise drafts based on EP’s review.
-.Versions will be released publicly and openly.
-.GBIFS will complete and issue derived products (translations, training modules, etc.).
+. Annually, the EP shall prioritize documentation needs and make recommendations for calls for documentation when appropriate.
+. Calls will issued by GBIFS to the community when appropriate.
+. EP will review and make recommendations on documentation proposals.
+. GBIFS will draw and issue contract with authors/teams of experts.
+. Authors will compile first draft drawing on community input when appropriate and submit to EP.
+. EP will review drafts and provide comments back to authors.
+. Authors will revise drafts based on EP’s review.
+. Versions will be released publicly and openly.
+. GBIFS will complete and issue derived products (translations, training modules, etc.).
 
 == Guidelines for document authors
 
