@@ -51,7 +51,7 @@ NOTE: Many tutorials for using both Git and Github are available on the web.
 
 === AsciiDoctor
 
-The source code is written in a computer language called _AsciiDoctor_, a type of _markup language_.  This means the format and structure of the document (such as headings and bold text) are applied using particular symbols visible in the source code.
+The source code is written in a computer language called _AsciiDoctor_, a type of _markup language_.  This means the format and structure of the document (such as headings and bold text) are applied using particular symbols visible in the text, and are converted to the required formatting when the document later.
 
 For example, the source code for the heading and first line of this section looks like this:
 
@@ -77,9 +77,9 @@ A log file of recent builds is kept by the build server.  If there is a syntax e
 
 WARNING: This section isn't yet final, as the tools are still being developed.
 
-If you are familiar with software development tools, you can build a document on your own computer – this is useful for previewing changes.  You can build the HTML document with this command, run from the top level directory:
+If you are familiar with software development tools, and using GBIF's office network or VPN, you can build a document on your own computer – this is useful for previewing changes.  You can build the HTML document with this command, run from the top level directory:
 
-`+docker run -it -v $PWD:/documents/ asciidoctor/docker-asciidoctor asciidoctor index.en.adoc+`
+`+docker run --rm -it -v $PWD:/documents/ mb.gbif.org:5000/gbif-asciidoctor-toolkit+`
 
 To create the PDF document, use `asciidoctor-pdf` rather than `asciidoctor`.  The result is called either `index.en.html` or `index.en.pdf`.
 
@@ -93,13 +93,12 @@ _We should perhaps include in this document:_
 
 == Guidelines for document translators
 
-The translation uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.  To translate a document into a new language, you will need to:
+The translation uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.  To translate a document into a new language, or update an existing translation, you will need to:
 
-. _[Should be automated]_ Update the `.pot` (_Portable Object Template_) file from the current English document
-.. For a new translation, copy this to the appropriate https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code], for example this would be `da.po` for a Danish translation.
-.. _[Should perhaps be automated]_ When updating a translation, use a po-file editor to update the existing translation using the po-template file.
+. For a new language, copy the `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code], for example this would be `da.po` for a Danish translation.
+. To update a translation, open the `xx.po` file in a po-file editor and choose the option to "Update from POT file" or similar.
 . Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
-. Replace the old translation file using Git/GitHub with your updated translation file.
+. Use Git/GitHub to replace the old translation file with your updated translation file.
 
 == Guidelines for software developers
 
@@ -114,18 +113,18 @@ The documents combine several small Linux tools:
 * Docker, to ensure consistent builds,
 * Apache, to serve the finished documents.
 
+The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-toolkit[Docker container], with some integration in the Jenkins build job.
+
 === New documents
 
 New documents should be made by:
+
 . Cloning the https://github.com/gbif/doc-template[doc-template] repository, with a name beginning with `doc-`,
 . Adding a new job to Jenkins.
 
 === Outstanding issues:
 
-. Automate keeping translation files up-to-date (i.e. with untranslated phrases included),
 . Apply a custom style to the document,
 . Demonstrate embedding an image, and alternative (translated) images,
-. Move the build script into a Docker image,
-. Update to the latest version of Asciidoctor,
 . Determine where the exported documents will be stored,
 . Decide a release process, possibly involving assigning DOIs.
