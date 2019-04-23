@@ -49,23 +49,23 @@ The source code can be edited in a web browser using the GitHub interface, or on
 
 NOTE: Many tutorials for using both Git and Github are available on the web.
 
-=== Asciidoctor
+=== AsciiDoctor
 
-The source code is written in a computer language called _Asciidoctor_, a type of _markup language_.  This means the format and structure of the document (such as headings and bold text) are applied using particular symbols visible in the source code.
+The source code is written in a computer language called _AsciiDoctor_, a type of _markup language_.  This means the format and structure of the document (such as headings and bold text) are applied using particular symbols visible in the source code.
 
 For example, the source code for the heading and first line of this section looks like this:
 
 ```
-=== Asciidoctor
+=== AsciiDoctor
 
-The source code is written in a computer language called _Asciidoctor_
+The source code is written in a computer language called _AsciiDoctor_
 ```
 
 The `pass:[===]` prefix makes a third-level heading, and the underscore symbols surrounding `+_Asciidoctor_+` specify emphasized text — decisions such as the font or text size aren't part of the document.
 The document (or parts of it) is stored in files with the extension `.en.adoc`, files such as images have their usual extensions.
 The main document is called `index.en.adoc`.
 
-NOTE: For information on the syntax of Asciidoctor, see the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+NOTE: For information on the syntax of AsciiDoctor, see the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
 
 === Generating the document
 
