@@ -22,9 +22,42 @@ ifdef::backend-pdf[]
 Cover image: https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
 endif::backend-pdf[]
 
-_**To be completed** GBIF has documentation etc, needs to be editable by multiple people, version controlled, translatable. Therefore, this system, etc._
+GBIF—the Global Biodiversity Information Facility—has long produced technical documentation on a range of topics relating to biodiversity informatics and open biodiversity data with the aim of supporting a global community of practice. 
 
-include::available_documents.en.adoc[]
+The GBIF Secretariat is now seeking to clarify its coordination role in developing such documentation while engaging its community to collaborate with subject-matter experts commissioned to create and update under the guidance of an editorial panel. This goal of this approach is to provide uniform, reliable, reusable, versioned, and easily updatable materials that instill community trust in the available documentation and foster its use. 
+
+The key features of this system will include
+
+* Standardized documentation
+* Routine updates, versioning and translations
+* Community input 
+* Peer review
+* Searchable format
+
+== The Editorial Panel
+
+The Editorial Panel (EP) consists of a volunteer group of experts that, in coordination with GBIF Secretariat staff, will provide oversight, guidance and peer-review of the GBIF documentation. The EP will provide recommendations to the GBIF Secretariat on commissioning high-priority guidance from subject-matter experts, with the following responsibilities:
+
+.Prioritize needs both for updating/revising existing documentation and for generating new documentation.
+.Establish review process (how reviews will happen, how many members are required for review, timeline, etc.).
+.Make recommendations regarding the documentation system (via GitHub repositories) for future sustainability.
+.Review drafts and provide comments back to authors.
+
+== Operations
+
+Each year, the EP will review available documentation and identify priority candidates for updates. and will review and approve updated documentation for publication. The EP should consult widely with other experts, institutions, initiatives andprojects within the biodiversity informatics community at-large when considering updates to and for new documentation.
+
+=== Annual process
+
+.Annually, the EP shall prioritize documentation needs and make recommendations for calls for documentation when appropriate.
+.Calls will issued by GBIFS to the community when appropriate.
+.EP will review and make recommendations on documentation proposals.
+.GBIFS will draw and issue contract with authors/teams of experts.
+.Authors will compile first draft drawing on community input when appropriate and submit to EP.
+.EP will review drafts and provide comments back to authors.
+.Authors will revise drafts based on EP’s review.
+.Versions will be released publicly and openly.
+.GBIFS will complete and issue derived products (translations, training modules, etc.).
 
 == Guidelines for document authors
 
@@ -37,33 +70,35 @@ Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in
 
 Of course, that does mean learning about some different tools — but the ones we have chosen are widely used in publishing, software development and translation communities.
 
-// Maybe this isn't the best word.
-=== Source code and versioning
+=== "Source code"
 
-The plain text files and other assets (images, data tables) that form the document are the _source code_.
+The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
 
 These source files are stored in a _Git repository_, which (for GBIF) is managed by a commercial service, _GitHub_.
+
 The source code for this document is stored at https://github.com/gbif/doc-documentation-guidelines/, the source code for this part of the document can be seen https://raw.githubusercontent.com/gbif/doc-documentation-guidelines/master/index.adoc[here].
 
-The source code can be edited in a web browser using the GitHub interface, or on a computer (including when offline) using Git.
+Contributors can edit the source code either in a web browser using the GitHub interface or on a computer (including when offline) using Git. They may also submit https://github.com/gbif/doc-documentation-guidelines/issues[issues] that comment or flag problems for others to address, including outdated information, broken links, misspellings and the like.
 
 NOTE: Many tutorials for using both Git and Github are available on the web.
 
 === AsciiDoctor
 
-The source code is written in a computer language called _AsciiDoctor_, a type of _markup language_.  This means the format and structure of the document (such as headings and bold text) are applied using particular symbols visible in the text, and are converted to the required formatting when the document later.
+GBIF documentation is maintained and published using a fast text processor and publishing toolchain called _AsciiDoctor_. Content for this system uses AsciiDoc, a lightweight _markup language_ whose format and structure (such as headings and bold text) are applied using particular symbols and conventions visible in the text. AsciiDoctor then converts this AsciiDoc syntax into the required formatting depending on the output format.
 
 For example, the source code for the heading and first line of this section looks like this:
 
 ```
 === AsciiDoctor
 
-The source code is written in a computer language called _AsciiDoctor_
+GBIF documentation is maintained and published using a fast text processor and publishing toolchain called _AsciiDoctor_.
 ```
 
-The `pass:[===]` prefix makes a third-level heading, and the underscore symbols surrounding `+_Asciidoctor_+` specify emphasized text — decisions such as the font or text size aren't part of the document.
-The document (or parts of it) is stored in files with the extension `.en.adoc`, files such as images have their usual extensions.
-The main document is called `index.en.adoc`.
+The `pass:[===]` prefix indicates a third-level heading, and the underscore symbols surrounding `+_AsciiDoc_+` specify emphasized text. Decisions regarding elements like the font or text size are not included in the main document.
+
+The document (or parts of it) is stored in files with the extension `.en.adoc`, where `.en.` indicates the language using the ISO two-letter language codes. Other source files such as images have their usual extensions.
+
+The main document that compiles any given document is called `index.en.adoc`.
 
 NOTE: For information on the syntax of AsciiDoctor, see the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
 
