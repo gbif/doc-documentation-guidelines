@@ -1,10 +1,10 @@
 == Available documents
 
+* https://github.com/gbif/doc-openrefine-guide[OpenRefine Guide] (Spanish first)
+* https://github.com/gbif/doc-effective-nodes-guidance[Establishing an Effective GBIF Participant Node: Concepts and general considerations] (English, with updates to Spanish, French and Portuguese translations pending)
 * https://github.com/gbif/doc-gbif-communications-strategy[GBIF Communications Strategy]
-* https://github.com/gbif/doc-effective-nodes-guidance[Effective nodes guidance]
 * https://github.com/gbif/doc-georeferencing-quick-guide[Georeferencing Quick Guide]
 * https://github.com/gbif/doc-georeferencing-best-practices[Georeferencing Best Practices]
 * https://github.com/gbif/doc-sensitive-species-treatment[Sensitive Species Treatment]
-* https://github.com/gbif/doc-openrefine-guide[OpenRefine Guide]
 * https://github.com/gbif/doc-georeferencing-calculator[Georeferencing calculator]
 * GBIF Documentation Guidelines (this document)
