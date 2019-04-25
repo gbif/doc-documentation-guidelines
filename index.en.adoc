@@ -234,6 +234,23 @@ The markup looks like this:
 Visit https://www.gbif.org[GBIF.org].
 ----
 
+==== Quotes
+To add a block quote to your text, use the word quote inside single brackets, followed by a comma and the full name of the quote’s source. The text of the quote itself should appear immediately below, with four underscore characters above and below it as in this example:
+
+----
+[quote, Publius Cornelius Tacitus]
+____
+mihi, quanto plura recentium seu veterum revolvo, tanto magis ludibria rerum mortalium cunctis in negotiis obversantur.
+____
+----
+
+And here’s how it renders:
+
+[quote, Publius Cornelius Tacitus]
+____
+mihi, quanto plura recentium seu veterum revolvo, tanto magis ludibria rerum mortalium cunctis in negotiis obversantur.
+____
+
 === "Source code"
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
