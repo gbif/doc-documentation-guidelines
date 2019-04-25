@@ -1,6 +1,7 @@
 = GBIF Documentation Guidelines
 GBIF Secretariat <communication@gbif.org>
 :toc: left
+:toclevels: 4
 :revnumber: 0.1-dev
 :revdate: {localdate}
 :title-logo-image: 1265538197-Cyperus-papyrus.jpg
