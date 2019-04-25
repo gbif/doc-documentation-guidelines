@@ -1,7 +1,7 @@
 = GBIF Documentation Guidelines
 GBIF Secretariat <communication@gbif.org>
 :toc: left
-:toclevels: 4
+:toclevels: 3
 :revnumber: 0.1-dev
 :revdate: {localdate}
 :title-logo-image: 1265538197-Cyperus-papyrus.jpg
@@ -105,14 +105,14 @@ Within a chapter, the first and highest heading level uses three equals signs:
 === Top-Level Heading
 ----
 
-====== Second-level heading
+===== Second-level heading
 This heading level should only follow a top-level heading:
 
 ----
 ==== Second-Level Heading
 ----
 
-====== Third-level heading
+===== Third-level heading
 This heading level should follow a second-level heading only:
 
 ----
