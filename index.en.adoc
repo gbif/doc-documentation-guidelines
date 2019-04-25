@@ -251,6 +251,23 @@ ____
 mihi, quanto plura recentium seu veterum revolvo, tanto magis ludibria rerum mortalium cunctis in negotiis obversantur.
 ____
 
+==== Sidebars
+Sidebar markup looks like this:
+
+----
+.Sidebar Title
+****
+Sidebar text is surrounded by four asterisk characters above and below.
+****
+----
+Sidebars render like this:
+
+.Sidebar Title
+****
+Sidebar text is surrounded by four asterisk characters above and below.
+****
+
+
 === "Source code"
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
