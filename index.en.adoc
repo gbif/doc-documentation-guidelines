@@ -70,6 +70,170 @@ Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in
 
 Of course, that does mean learning about some different tools — but the ones we have chosen are widely used in publishing, software development and translation communities.
 
+=== Writing in AsciiDoc
+AsciiDoc is a text document format for writing (among other things) books, ebooks, and documentation. It is similar to wiki markup—if you can write a Wikipedia article, then you’ll have no problem with AsciiDoc.
+
+This section illustrates some of the most common elements GBIF authors will use in writing technical documentation. The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] and the [AsciiDoctor cheat sheet] provide more comprehensive references, but the following sections provide an overview of the markup you’ll use most frequently.
+
+==== Text
+Regular paragraph text does not need any special markup in AsciiDoc. Just add a blank line both above and below each paragraph, and the first word in the paragraph should not have a space before it. Here are some example paragraphs in AsciiDoc:
+
+----
+This is an example paragraph written in AsciiDoc. See, it's just plain text; no special markup necessary! Do make sure there aren't spaces or manual indentations at the beginning of your paragraph text.
+
+This is a second example paragraph in AsciiDoc. Note that there's a line break and a blank line between paragraphs.
+----
+
+===== Chapters
+The top of each chapter file should begin with a chapter title preceded by two equals signs. It's good practice to always include a unique ID string above the chapter title, surrounded in double brackets, for example:
+
+----
+[[unique_chapter_id]]
+==== Chapter Title
+
+Chapter text begins here.
+----
+
+==== Headings
+NOTE: In AsciiDoc, the document (book) is considered a level 0 header, so a chapter generally starts AsciiDoc level 1 (a notable exception being when you're dividing the book into parts). In this scenario, sections within chapters start at AsciiDoc level 3.
+
+===== Top-level heading
+Within a chapter, the first and highest heading level uses three equals signs:
+
+----
+=== Top-Level Heading
+----
+
+====== Second-level heading
+This heading level should only follow a top-level heading:
+
+----
+==== Second-Level Heading
+----
+
+====== Third-level heading
+This heading level should follow a second-level heading only:
+
+----
+===== Third-level heading
+----
+
+==== Prefaces
+A preface file should begin with the word preface in single brackets, followed on the next line by two equals signs and the preface title:
+
+----
+[preface]
+== Preface Title
+
+Preface text begins here.
+----
+
+==== Forewords
+A foreword file should begin with the word foreword in single brackets, followed on the next line by two equals signs and the foreword title:
+
+----
+[foreword]
+== Foreword
+
+Foreword text begins here.
+----
+
+==== Afterwords
+The markup for an Afterword is similar to the preface markup, but it has an additional role attribute with a value of "afterword". Here's the markup:
+
+----
+[preface]
+[role="afterword"]
+== Afterword
+
+Afterword text begins here.
+----
+
+==== Dedications
+A dedication file should begin with the word dedication in single brackets, followed by a blank line and then the dedication title and text. The title must be present, but it will not render in the output:
+
+----
+[dedication]
+== Dedication
+
+Once again to Zelda.
+----
+Dedication pages render on their own page at the beginning of the book, before the table of contents.
+
+==== Glossaries
+
+A glossary file should begin with the word glossary in double brackets, followed by the glossary title and a blank line. Following the blank line should be another instance of the word glossary, this time in single brackets.
+
+Each glossary entry should consist of one glossary term, followed by two colons and a space, then the glossary definition. If you’d like to add an additional paragraph to a glossary definition, add a plus sign ("+") on the following line by itself, and begin the additional paragraph on the line after it.
+
+Here’s an example of the markup:
+
+----
+[[glossary]]
+== Glossary
+
+[glossary]
+Participant:: a country, economy or organization that joins GBIF by signing a https://www.gbif.org/document/80661[Memorandum of Understanding] and establishing a co-ordinated effort to support open access and use of biodiversity data, to advance scientific research, and to promote technological and sustainable development. 
+
+Biodiversity information facility:: Variously described as a ‘BIF’, a system or a network, a broader structure of people and institutions, coordinated by the node, that collectively forms an infrastructure for delivering biodiversity information to relevant stakeholders.
+
+Participant node:: a coordinating team designated by the Participant to coordinate a network of people and institutions that produce, manage and use biodiversity data, collectively building an infrastructure for delivering biodiversity information.
+----
+
+==== Appendixes
+To designate a file as an appendix, simply add the word appendix in single brackets at the top of the file. Immediately below it should be the title of the Appendix. For example:
+
+----
+[appendix]
+== Resources
+
+The following list of resources ...
+----
+
+==== Inline Markup
+Here are some standard typographical conventions with explanations of how they're commonly used:
+
+_Italic_
+One underscore character on either side of text marks it as italics in AsciiDoc.
+
+Should you need to mark only a few letters of a word in italics, or a word that abuts a non-whitespace character, double up the underscore characters on either side of the text: __Part__ial word i__tal__ic
+
+*Bold*
+Bolded text is used to emphasize a word or phrase. The AsciiDoc markup is one asterisk on either side of the text to be bolded.
+
+Should you need to mark only a few letters of a word in bold, or a word that abuts a non-whitespace character, double up the asterisk characters on either side of the text, like this: **Part**ial word b**ol**d
+
++Constant Width+
+Constant width, or monospaced, text is used for code, as well as within paragraphs to refer to program elements such as variable or function names, databases, data types, environment variables, statements, and keywords. The AsciiDoc markup is one plus sign on either side of the text to monospaced.
+
+Should you need to mark only a few letters of a word in constant width, or a word that abuts a non-whitespace character, double up the plus signs on either side of the text, like this: ++Part++ial word con++st++ant wid++th++
+
+*+Constant Width Bold+*
+Monospaced and bolded text is used to show commands or other text that should be typed literally by the user. The AsciiDoc markup is one asterisk and one plus sign on either side of the text. Note that the asterisk (*) pair should be on the outside and the plus-symbol (+) pair on the inside.
+
+Should you need to mark only a few letters of a word in constant width bold, or a word that abuts a non-whitespace character, double up the markup on either side of the text, like this: **++Part++**ial word constant w**++id++**th bold
+
+_++Constant Width Italic++_
+Monospaced and italicized text indicates where text should be replaced with user-supplied values or by values determined by context. The AsciiDoc markup is one underscore and two plus signs on either side of the text. Note that the underscore (_) must be on the outside and the plus-symbol (+) pair on the inside.
+
+Should you need to mark only a few letters of a word in  constant width italic, or a word that abuts a non-whitespace character, double up the underscore markup on either side of the text, like this: __++Part++__ial word con__++st++__ant width ital__++ic++__
+
+~subscript~
+For subscript text, use a tilde character (~) on either side of the subscript text.
+
+^superscript^
+For superscript text, use a caret (^) character on either side of the superscript text.
+
+_Hyperlinks_
+For hyperlinks to external sources, just add the full URL string followed by brackets containing the text you'd like to appear with the URL. The bracketed text will become a clickable link in web versions. In print versions, it will appear in the text, followed by the actual URL in parenthesis.
+
+The markup looks like this:
+
+----
+Visit https://www.gbif.org[GBIF.org].
+----
+
+
 === "Source code"
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
