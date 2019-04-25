@@ -234,7 +234,6 @@ The markup looks like this:
 Visit https://www.gbif.org[GBIF.org].
 ----
 
-
 === "Source code"
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
