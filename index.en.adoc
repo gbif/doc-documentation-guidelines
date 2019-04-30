@@ -267,6 +267,79 @@ Sidebars render like this:
 Sidebar text is surrounded by four asterisk characters above and below.
 ****
 
+==== Notes, Tips, Warnings, and Cautions
+AsciiDoc allows authors to call out supplemental information as a note, a tip, a warning or a caution. 
+
+For a note, the markup looks like this:
+
+____
+[NOTE]
+====
+Past trends are no guarantee of future performance.
+====
+____
+
+And here’s how it renders:
+
+[NOTE]
+====
+Here's some text inside a note.
+====
+
+Or you could use a warning:
+____
+.Warning Title
+[WARNING]
+====
+Here's some text inside a warning.
+====
+____
+
+Warnings render like this:
+
+[WARNING]
+====
+Here's some text inside a warning.
+====
+
+Finally, here’s a caution, which can add supplemental information to your text.
+
+____
+[CAUTION]
+====
+Here's some text inside a caution.
+====
+____
+
+This is how cautions render:
+
+[CAUTION]
+====
+Here's some text inside a caution.
+====
+
+Each of these admonitions can also include titles. To add a title, add a line like this before the adminition.
+____
+.Tip Title
+____
+
+You’d create a tip with a title like so:
+____
+.Tip Bet on Stewball
+[TIP]
+====
+You might win.
+====
+____
+
+…which will yield this result:
+
+.Tip Bet on Stewball
+[TIP]
+====
+You might win.
+====
+
 === "Source code"
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
