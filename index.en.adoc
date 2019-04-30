@@ -267,8 +267,8 @@ Sidebars render like this:
 Sidebar text is surrounded by four asterisk characters above and below.
 ****
 
-==== Notes, Tips, Warnings, and Cautions
-AsciiDoc allows authors to call out supplemental information as a note, a tip, a warning or a caution. 
+==== Admonitions
+AsciiDoc allows authors to call out supplemental admonitions in the form of notes, tips, warnings and cautions. 
 
 For a note, the markup looks like this:
 
@@ -325,7 +325,7 @@ ____
 
 You’d create a tip with a title like so:
 ____
-.Tip Bet on Stewball
+.Bet on Stewball
 [TIP]
 ====
 You might win.
