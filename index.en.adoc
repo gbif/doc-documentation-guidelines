@@ -283,7 +283,7 @@ And here’s how it renders:
 
 [NOTE]
 ====
-Here's some text inside a note.
+Past trends are no guarantee of future performance.
 ====
 
 Or you could use a warning:
@@ -291,7 +291,7 @@ Or you could use a warning:
 .Warning Title
 [WARNING]
 ====
-Here's some text inside a warning.
+But first, a word of warning:
 ====
 ----
 
@@ -299,7 +299,7 @@ Warnings render like this:
 
 [WARNING]
 ====
-Here's some text inside a warning.
+But first, a word of warning:
 ====
 
 Finally, here’s a caution, which can add supplemental information to your text.
@@ -307,7 +307,7 @@ Finally, here’s a caution, which can add supplemental information to your text
 ----
 [CAUTION]
 ====
-Here's some text inside a caution.
+Exercise extreme caution when opening.
 ====
 ----
 
@@ -315,7 +315,7 @@ This is how cautions render:
 
 [CAUTION]
 ====
-Here's some text inside a caution.
+Exercise extreme caution when opening.
 ====
 
 Each of these admonitions can also include titles. To add a title, add a line like this before the adminition.
