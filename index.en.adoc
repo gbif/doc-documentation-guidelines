@@ -334,7 +334,7 @@ ____
 
 …which will yield this result:
 
-.Tip Bet on Stewball
+.Bet on Stewball
 [TIP]
 ====
 You might win.
