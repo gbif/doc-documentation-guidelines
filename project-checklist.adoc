@@ -4,10 +4,10 @@ This checklist provides documentation authors, staff of the GBIF Secretariat and
 
 === Starting a new documentation project
 
- [ ] Clone doc-template repository and give the new repository a short name, including the prefix 'doc-', that reflects the title of the new documentation project e.g. https://github.com/gbif/doc-effective-nodes-guidance[doc-effective-nodes-guidance] for the document _Establishing an Effective GBIF Participant Node Concepts and general considerations_ 
- [ ] Set up a new Jenkins project
- [ ] Register a new DOI for the documentation through GBIF's DataCite account, starting with the prefix 'doc-', e.g. https://doi.org/10.15468/doc-z79c-sa53
- [ ] Write, adding documents to the repository as structure dictates
+[ ] Clone doc-template repository and give the new repository a short name, including the prefix 'doc-', that reflects the title of the new documentation project e.g. https://github.com/gbif/doc-effective-nodes-guidance[doc-effective-nodes-guidance] for the document _Establishing an Effective GBIF Participant Node Concepts and general considerations_ 
+[ ] Set up a new Jenkins project
+[ ] Register a new DOI for the documentation through GBIF's DataCite account, starting with the prefix 'doc-', e.g. https://doi.org/10.15468/doc-z79c-sa53
+[ ] Write, adding documents to the repository as structure dictates
 
 === Distributing documentation for public review
 
