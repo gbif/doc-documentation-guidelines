@@ -1,11 +1,9 @@
 = GBIF Documentation Guidelines
 GBIF Secretariat <communication@gbif.org>
-:toc: left
-:toclevels: 3
-:revnumber: 0.1-dev
-:revdate: {localdate}
+:revnumber: {git-metadata-branch}
+:revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
 :title-logo-image: 1265538197-Cyperus-papyrus.jpg
-:icons: font
+:license: https://creativecommons.org/licenses/by/4.0/
 
 ifdef::backend-html5[]
 .https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
