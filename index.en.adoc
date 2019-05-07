@@ -72,7 +72,9 @@ Of course, that does mean learning about some different tools — but the ones w
 === Writing in AsciiDoc
 AsciiDoc is a text document format for writing (among other things) books, ebooks, and documentation. It is similar to wiki markup—if you can write a Wikipedia article, then you’ll have no problem with AsciiDoc.
 
-This section illustrates some of the most common elements GBIF authors will use in writing technical documentation. The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] and the [AsciiDoctor cheat sheet] provide more comprehensive references, but the following sections provide an overview of the markup you’ll use most frequently.
+This section illustrates some of the most common elements GBIF authors will use in writing technical documentation. The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide]
+//and the [AsciiDoctor cheat sheet]
+provides more comprehensive references, but the following sections provide an overview of the markup you’ll use most frequently.
 
 ==== Text
 Regular paragraph text does not need any special markup in AsciiDoc. Just add a blank line both above and below each paragraph, and the first word in the paragraph should not have a space before it. Here are some example paragraphs in AsciiDoc:
@@ -83,15 +85,18 @@ This is an example paragraph written in AsciiDoc. See, it's just plain text; no 
 This is a second example paragraph in AsciiDoc. Note that there's a line break and a blank line between paragraphs.
 ----
 
+[[chapters]]
 ===== Chapters
 The top of each chapter file should begin with a chapter title preceded by two equals signs. It's good practice to always include a unique ID string above the chapter title, surrounded in double brackets, for example:
 
 ----
 [[unique_chapter_id]]
-==== Chapter Title
+== Chapter Title
 
 Chapter text begins here.
 ----
+
+The unique ID string is used to link directly to a chapter or section, such as <<chapters,this link to this section>>.  Readers can also link directly to a section, by using the § link that appears when the mouse hovers over a chapter heading.
 
 ==== Headings
 NOTE: In AsciiDoc, the document (book) is considered a level 0 header, so a chapter generally starts AsciiDoc level 1 (a notable exception being when you're dividing the book into parts). In this scenario, sections within chapters start at AsciiDoc level 3.
@@ -192,51 +197,51 @@ The following list of resources ...
 ==== Inline Markup
 Here are some standard typographical conventions with explanations of how they're commonly used:
 
-_Italic_
-One underscore character on either side of text marks it as italics in AsciiDoc.
+`+_Italic_+` One underscore character on either side of text marks it as _italics_ in AsciiDoc.
 
-Should you need to mark only a few letters of a word in italics, or a word that abuts a non-whitespace character, double up the underscore characters on either side of the text: __Part__ial word i__tal__ic
+Should you need to mark only a few letters of a word in italics, or a word that abuts a non-whitespace character, double up the underscore characters on either side of the text: `+__Part__ial word i__tal__ic+`
 
-*Bold*
-Bolded text is used to emphasize a word or phrase. The AsciiDoc markup is one asterisk on either side of the text to be bolded.
+`+*Bold*+` *Bolded text* is used to emphasize a word or phrase. The AsciiDoc markup is one asterisk on either side of the text to be bolded.
 
-Should you need to mark only a few letters of a word in bold, or a word that abuts a non-whitespace character, double up the asterisk characters on either side of the text, like this: **Part**ial word b**ol**d
+Should you need to mark only a few letters of a word in bold, or a word that abuts a non-whitespace character, double up the asterisk characters on either side of the text, like this: `+**Part**ial word b**ol**d+`
 
-+Constant Width+
-Constant width, or monospaced, text is used for code, as well as within paragraphs to refer to program elements such as variable or function names, databases, data types, environment variables, statements, and keywords. The AsciiDoc markup is one plus sign on either side of the text to monospaced.
+`pass:[`Constant Width`]`
+Constant width, or `monospaced`, text is used for code, as well as within paragraphs to refer to program elements such as variable or function names, databases, data types, environment variables, statements, and keywords. The AsciiDoc markup is one grave accent sign on either side of the text to monospaced.
 
-Should you need to mark only a few letters of a word in constant width, or a word that abuts a non-whitespace character, double up the plus signs on either side of the text, like this: ++Part++ial word con++st++ant wid++th++
+Should you need to mark only a few letters of a word in constant width, or a word that abuts a non-whitespace character, double up the grave accent signs on either side of the text, like this: `pass:[``Part``ial word con``st``ant wid``th``]`
 
-*+Constant Width Bold+*
-Monospaced and bolded text is used to show commands or other text that should be typed literally by the user. The AsciiDoc markup is one asterisk and one plus sign on either side of the text. Note that the asterisk (*) pair should be on the outside and the plus-symbol (+) pair on the inside.
+`pass:[`*Constant Width Bold*`]`
+Monospaced and bolded text is used to show commands or other text that should be `*typed literally*` by the user. The AsciiDoc markup is one grave accent sign and one asterisk sign on either side of the text. Note that the grave accent (`pass:[`]`) pair should be on the outside and the asterisk (`*`) pair on the inside.
 
-Should you need to mark only a few letters of a word in constant width bold, or a word that abuts a non-whitespace character, double up the markup on either side of the text, like this: **++Part++**ial word constant w**++id++**th bold
+Should you need to mark only a few letters of a word in constant width bold, or a word that abuts a non-whitespace character, double up the markup on either side of the text, like this: `pass:[``**Part**``ial word constant w``**id**``th bold]`.
 
-_++Constant Width Italic++_
-Monospaced and italicized text indicates where text should be replaced with user-supplied values or by values determined by context. The AsciiDoc markup is one underscore and two plus signs on either side of the text. Note that the underscore (_) must be on the outside and the plus-symbol (+) pair on the inside.
+Should you need to write characters that would otherwise style the text, such as asterisks or underscores, you must also surround the text by plus (`pass:[+]`) signs. `pass:[`This *markup*`]` shows as `This *markup*`, but `pass:[`+This other *markup*+`]` shows as `+This other *markup*+`.
 
-Should you need to mark only a few letters of a word in  constant width italic, or a word that abuts a non-whitespace character, double up the underscore markup on either side of the text, like this: __++Part++__ial word con__++st++__ant width ital__++ic++__
+`pass:[`_Constant Width Italic_`]`
+`_Monospaced and italicized_` text indicates where text should be replaced with user-supplied values or by values determined by context. The AsciiDoc markup is one grave accent sign and one underscore on either side of the text. Note that the grave accent (`pass:[`]`) must be on the outside and the underscore (`_`) pair on the inside.
 
-~subscript~
-For subscript text, use a tilde character (~) on either side of the subscript text.
+Should you need to mark only a few letters of a word in  constant width italic, or a word that abuts a non-whitespace character, double up the markup on either side of the text, like this: `pass:[``__Part__``ial word constant w``__id__``th italic]`.
 
-^superscript^
-For superscript text, use a caret (^) character on either side of the superscript text.
+`+~subscript~+`
+For ~subscript~ text, use a tilde character (`~`) on either side of the subscript text.
 
-_Hyperlinks_
+`^superscript^`
+For ^superscript^ text, use a caret (`^`) character on either side of the superscript text.
+
+Hyperlinks:
 For hyperlinks to external sources, just add the full URL string followed by brackets containing the text you'd like to appear with the URL. The bracketed text will become a clickable link in web versions. In print versions, it will appear in the text, followed by the actual URL in parenthesis.
 
 The markup looks like this:
 
 ----
-Visit https://www.gbif.org[GBIF.org].
+Visit https://www.gbif.org/[GBIF.org].
 ----
 
 ==== Quotes
 To add a block quote to your text, use the word quote inside single brackets, followed by a comma and the full name of the quote’s source. The text of the quote itself should appear immediately below, with four underscore characters above and below it as in this example:
 
 ----
-[quote, Publius Cornelius Tacitus]
+[quote,Publius Cornelius Tacitus]
 ____
 mihi, quanto plura recentium seu veterum revolvo, tanto magis ludibria rerum mortalium cunctis in negotiis obversantur.
 ____
@@ -338,7 +343,19 @@ You might win.
 You might win.
 ====
 
-=== "Source code"
+There is also a short for, which is appropriate for a single sentance:
+
+----
+NOTE: Past trends are no guarantee of future performance
+
+WARNING: But first, a word of warning:
+
+CAUTION: Exercise extreme caution when opening.
+
+TIP: You might win.
+----
+
+=== Document “source code”
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
 
