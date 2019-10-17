@@ -1,0 +1,39 @@
+== Open peer-review process
+
+While peer-review is only one step in GBIF's digital documentation workflow, it is a critical one since it allows the community members who are the intended audience members and beneficiaries to provide direct input into the documents' development. 
+
+* ensures and maintains quality of documentation
+* fosters community discussion and collaboration
+* provides another way of crediting individual contributions from (and to) the community
+* makes it easier to make corrections to current version and to update future ones
+
+Open peer-review
+greater transparency both during and after the peer-review process. 
+
+encourage open, honest reviewing. 
+
+support the community
+
+authors and reviewers are part of the same community, and their identities are not concealed at any point during the process. The use of GitHub to raise and track the resolution of issues and concerns also ensures transparency.
+
+more collegial comments
+focus on supporting authors to improve their work for the benefit of the broader biodiversity informatics community 
+
+reviewers who can't hide behind a veil of anonymity are more likely to provide more constructive critiques.
+
+The GBIF Secretariat will acknowledge the contributions of reviewers as a matter of practice, reinforcing the broader community-led approach in this work.
+
+=== Best practices for community reviewers
+
+* Recognizing that we are all extremely busy, if you intend to provide comments, please set aside sufficient time to read and digest the document (the PDF format is provided for this purpose). 
+* Use a first read to form a general impression of the document, noting any major problems or concerns.
+* Keeping your notes handy, begin a second read-through in which you'll flag your issues point-by-point. 
+* Comment on the validity of the guidance provided in the documentation, identifying possible errors and evaluating the approaches
+* Identify missing or inaccurate references
+* Submit issues online through the document's GitHub repository, using direct links to numbered sections to cite where the issue or problem you wish to identify arises.
+* Track the progress and resolution of your issues. We permit and even encourage direct, reciprocal discussion between authors and reviewers and 
+
+Open nature of the issues will ensure timely resolution of issues prior to final publication of the document.
+
+=== In scope
+
