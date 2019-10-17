@@ -1,10 +1,6 @@
 == Documentation process and workflow
 
-Recognizing that we are all extremely busy, if you intend to provide comments, please set aside sufficient time to read and digest the document. 
-Use a first read to form a general impression of the document, noting any major problems or concerns.
-Keeping your notes handy, begin a second read-through in which you'll flag your issues point-by-point. 
-Submit issues online through the document's GitHub repository. Use the direct links to numbered sections before detailing the issue or problems you wish to identify.
-
+This document outlines the process by which the GBIF Secretariat will produce digital documentation. 
 
 open participation: inclusive wider community, enable credit
 open identities
@@ -13,12 +9,9 @@ open interaction: possible training
 open learning: new versions can be produced as correction , training and persistent provenance
 open platforms
 
-
 inclusive, transparent and accountable
 
 The manuscript is fast-checked, and published on a network-based platform. Through a forum, others can leave commentaries.
-
-
 
 Open peer-review oath
 
@@ -29,10 +22,6 @@ Principle 4. I will be an ambassador for the practice of open science
 
 Aleksic J, Alexa A, Attwood TK et al. (2015) An Open Science Peer Review Oath, v2. F1000Research 3: 271. https://doi.org/10.12688/f1000research.5686.2
 
-
-== Peer-review process
-
-This document outlines the process by which the GBIF Secretariat will produce digital documentation. 
 
 === Editorial panel prioritization and selection
 
