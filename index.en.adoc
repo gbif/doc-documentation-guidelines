@@ -7,7 +7,7 @@ GBIF Secretariat <communication@gbif.org>
 
 ifdef::backend-html5[]
 .https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
-image::1265538197-Cyperus-papyrus.jpg[Photograph of _Cyperus papyrus_ L.]
+image::1265538197-Cyperus-papyrus.jpg[Photograph of _Cyperus papyrus_]
 endif::backend-html5[]
 
 ifdef::backend-html5[]
