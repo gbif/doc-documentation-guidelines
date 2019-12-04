@@ -367,6 +367,12 @@ Contributors can edit the source code either in a web browser using the GitHub i
 
 NOTE: Many tutorials for using both Git and Github are available on the web.
 
+==== Document versions
+
+Some documents are published as multiple versions.  This is done using _branches_ in Git: the name of the branch, such as `1.0` or `2019`, is the identifier for the version.  This allows for edits to old versions, such as updating a link or making correcting a syntax error in the document.
+
+// For multi-version projects, Jenkins is set to build from every branch, and deploy to a subdirectory on the webserver.
+
 === AsciiDoctor
 
 GBIF documentation is maintained and published using a fast text processor and publishing toolchain called _AsciiDoctor_.  AsciiDoctor converts the AsciiDoc syntax into the required formatting depending on the output format.
