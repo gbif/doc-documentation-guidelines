@@ -434,6 +434,19 @@ New documents should be made by:
 . Cloning the https://github.com/gbif/doc-template[doc-template] repository, with a name beginning with `doc-`,
 . Adding a new job to Jenkins.
 
+==== Jenkins setup
+
+* Set a `payload` parameter to receive the GitHub information
+* *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`
+* *Build Triggers*: Set an authentication token
+*  Set a build script, which varies depending whether the document is keeping old versions deployed.
+
+==== GitHub setup
+
+* Set up a new webhook, with the path e.g. `http://builds.gbif.org/job/doc-documentation-guidelines/buildWithParameters?token=XXXXXXXXXX` (with the token from above)
+* The secret text seems not to matter
+* Select the individual events `Pushes` and `Releases`
+
 === Outstanding issues:
 
 . Apply a custom style to the document,
