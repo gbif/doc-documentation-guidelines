@@ -1,11 +1,11 @@
 == Open peer-review process
 
-While peer-review is only one step in GBIF's digital documentation workflow, it is a critical one since it allows the community members who are the intended audience members and beneficiaries to provide direct input into the documents' development. 
+While peer review is just a single step in GBIF's digital documentation workflow, it provides an important opportunity for community members to offer direct input and feedback as the intended users and beneficiaries of these documents. 
 
-* ensures and maintains quality of documentation
-* fosters community discussion and collaboration
-* provides another way of crediting individual contributions from (and to) the community
-* makes it easier to make corrections to current version and to update future ones
+This process is intended, first and foremost, to ensure the quality of the documentation, but it can also be seen as a mechanism for fostering community discussion and collaboration.
+
+
+
 
 Open peer-review
 greater transparency both during and after the peer-review process. 
@@ -22,6 +22,10 @@ focus on supporting authors to improve their work for the benefit of the broader
 reviewers who can't hide behind a veil of anonymity are more likely to provide more constructive critiques.
 
 The GBIF Secretariat will acknowledge the contributions of reviewers as a matter of practice, reinforcing the broader community-led approach in this work.
+
+* provide another way of crediting individual contributions from (and to) the community
+* makes it easier to make corrections to current version and to update future ones
+
 
 === Best practices for community reviewers
 
