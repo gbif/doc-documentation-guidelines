@@ -42,7 +42,7 @@ The Editorial Panel (EP) consists of a volunteer group of experts that, in coord
 .Make recommendations regarding the documentation system (via GitHub repositories) for future sustainability.
 .Review drafts and provide comments back to authors.
 
-== Operations
+=== Operations
 
 Each year, the EP will review available documentation and identify priority candidates for updates. and will review and approve updated documentation for publication. The EP should consult widely with other experts, institutions, initiatives andprojects within the biodiversity informatics community at-large when considering updates to and for new documentation.
 
@@ -67,26 +67,30 @@ Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in
 * The same source files can produce multiple outputs automatically, such as HTML and PDF,
 * Document translations can be tracked.
 
-Of course, that does mean learning about some different tools — but the ones we have chosen are widely used in publishing, software development and translation communities.
+Of course, that does mean learning about some different tools — but the ones we have chosen are widely used in the publishing, software development and translation communities.
 
-=== Writing in AsciiDoc
-AsciiDoc is a text document format for writing (among other things) books, ebooks, and documentation. It is similar to wiki markup—if you can write a Wikipedia article, then you’ll have no problem with AsciiDoc.
+=== Writing in AsciiDoctor
+AsciiDoctor is a text document format for writing (among other things) books, ebooks, and documentation. It is similar to wiki markup — if you can write a Wikipedia article, then you’ll have no problem with AsciiDoctor.
 
-This section illustrates some of the most common elements GBIF authors will use in writing technical documentation. The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide]
-//and the [AsciiDoctor cheat sheet]
-provides more comprehensive references, but the following sections provide an overview of the markup you’ll use most frequently.
+.AsciiDoctor User Guide
+[TIP]
+====
+The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides an excellent reference to what's possible with AsciiDoctor.
+====
+
+Here are the most common parts of AsciiDoctor markup:
 
 ==== Text
-Regular paragraph text does not need any special markup in AsciiDoc. Just add a blank line both above and below each paragraph, and the first word in the paragraph should not have a space before it. Here are some example paragraphs in AsciiDoc:
+Regular paragraph text does not need any special markup in AsciiDoctor. Just add a blank line both above and below each paragraph, and the first word in the paragraph should not have a space before it. Here are some example paragraphs in AsciiDoctor:
 
 ----
-This is an example paragraph written in AsciiDoc. See, it's just plain text; no special markup necessary! Do make sure there aren't spaces or manual indentations at the beginning of your paragraph text.
+This is an example paragraph written in AsciiDoctor. See, it's just plain text; no special markup necessary! Do make sure there aren't spaces or manual indentations at the beginning of your paragraph text.
 
-This is a second example paragraph in AsciiDoc. Note that there's a line break and a blank line between paragraphs.
+This is a second example paragraph in AsciiDoctor. Note that there's a line break and a blank line between paragraphs.
 ----
 
 [[chapters]]
-===== Chapters
+==== Chapters and headings
 The top of each chapter file should begin with a chapter title preceded by two equals signs. It's good practice to always include a unique ID string above the chapter title, surrounded in double brackets, for example:
 
 ----
@@ -98,9 +102,6 @@ Chapter text begins here.
 
 The unique ID string is used to link directly to a chapter or section, such as <<chapters,this link to this section>>.  Readers can also link directly to a section, by using the § link that appears when the mouse hovers over a chapter heading.
 
-==== Headings
-NOTE: In AsciiDoc, the document (book) is considered a level 0 header, so a chapter generally starts AsciiDoc level 1 (a notable exception being when you're dividing the book into parts). In this scenario, sections within chapters start at AsciiDoc level 3.
-
 ===== Top-level heading
 Within a chapter, the first and highest heading level uses three equals signs:
 
@@ -108,125 +109,19 @@ Within a chapter, the first and highest heading level uses three equals signs:
 === Top-Level Heading
 ----
 
-===== Second-level heading
-This heading level should only follow a top-level heading:
+Lower-level headings continue with additional `=` signs.
 
-----
-==== Second-Level Heading
-----
-
-===== Third-level heading
-This heading level should follow a second-level heading only:
-
-----
-===== Third-level heading
-----
-
-==== Prefaces
-A preface file should begin with the word preface in single brackets, followed on the next line by two equals signs and the preface title:
-
-----
-[preface]
-== Preface Title
-
-Preface text begins here.
-----
-
-==== Forewords
-A foreword file should begin with the word foreword in single brackets, followed on the next line by two equals signs and the foreword title:
-
-----
-[foreword]
-== Foreword
-
-Foreword text begins here.
-----
-
-==== Afterwords
-The markup for an Afterword is similar to the preface markup, but it has an additional role attribute with a value of "afterword". Here's the markup:
-
-----
-[preface]
-[role="afterword"]
-== Afterword
-
-Afterword text begins here.
-----
-
-==== Dedications
-A dedication file should begin with the word dedication in single brackets, followed by a blank line and then the dedication title and text. The title must be present, but it will not render in the output:
-
-----
-[dedication]
-== Dedication
-
-Once again to Zelda.
-----
-Dedication pages render on their own page at the beginning of the book, before the table of contents.
-
-==== Glossaries
-
-A glossary file should begin with the word glossary in double brackets, followed by the glossary title and a blank line. Following the blank line should be another instance of the word glossary, this time in single brackets.
-
-Each glossary entry should consist of one glossary term, followed by two colons and a space, then the glossary definition. If you’d like to add an additional paragraph to a glossary definition, add a plus sign ("+") on the following line by itself, and begin the additional paragraph on the line after it.
-
-Here’s an example of the markup:
-
-----
-[[glossary]]
-== Glossary
-
-[glossary]
-Participant:: a country, economy or organization that joins GBIF by signing a https://www.gbif.org/document/80661[Memorandum of Understanding] and establishing a co-ordinated effort to support open access and use of biodiversity data, to advance scientific research, and to promote technological and sustainable development. 
-
-Biodiversity information facility:: Variously described as a ‘BIF’, a system or a network, a broader structure of people and institutions, coordinated by the node, that collectively forms an infrastructure for delivering biodiversity information to relevant stakeholders.
-
-Participant node:: a coordinating team designated by the Participant to coordinate a network of people and institutions that produce, manage and use biodiversity data, collectively building an infrastructure for delivering biodiversity information.
-----
-
-==== Appendixes
-To designate a file as an appendix, simply add the word appendix in single brackets at the top of the file. Immediately below it should be the title of the Appendix. For example:
-
-----
-[appendix]
-== Resources
-
-The following list of resources ...
-----
+_https://asciidoctor.org/docs/user-manual/#sections[Continue reading about section headings in the AsciiDoctor User Guide]._
 
 ==== Inline Markup
 Here are some standard typographical conventions with explanations of how they're commonly used:
 
-`+_Italic_+` One underscore character on either side of text marks it as _italics_ in AsciiDoc.
+`+_Italic_+` One underscore character on either side of text marks it as _italics_ in AsciiDoctor.
 
-Should you need to mark only a few letters of a word in italics, or a word that abuts a non-whitespace character, double up the underscore characters on either side of the text: `+__Part__ial word i__tal__ic+`
-
-`+*Bold*+` *Bolded text* is used to emphasize a word or phrase. The AsciiDoc markup is one asterisk on either side of the text to be bolded.
-
-Should you need to mark only a few letters of a word in bold, or a word that abuts a non-whitespace character, double up the asterisk characters on either side of the text, like this: `+**Part**ial word b**ol**d+`
+`+*Bold*+` *Bolded text* is used to emphasize a word or phrase. The AsciiDoctor markup is one asterisk on either side of the text to be bolded.
 
 `pass:[`Constant Width`]`
-Constant width, or `monospaced`, text is used for code, as well as within paragraphs to refer to program elements such as variable or function names, databases, data types, environment variables, statements, and keywords. The AsciiDoc markup is one grave accent sign on either side of the text to monospaced.
-
-Should you need to mark only a few letters of a word in constant width, or a word that abuts a non-whitespace character, double up the grave accent signs on either side of the text, like this: `pass:[``Part``ial word con``st``ant wid``th``]`
-
-`pass:[`*Constant Width Bold*`]`
-Monospaced and bolded text is used to show commands or other text that should be `*typed literally*` by the user. The AsciiDoc markup is one grave accent sign and one asterisk sign on either side of the text. Note that the grave accent (`pass:[`]`) pair should be on the outside and the asterisk (`*`) pair on the inside.
-
-Should you need to mark only a few letters of a word in constant width bold, or a word that abuts a non-whitespace character, double up the markup on either side of the text, like this: `pass:[``**Part**``ial word constant w``**id**``th bold]`.
-
-Should you need to write characters that would otherwise style the text, such as asterisks or underscores, you must also surround the text by plus (`pass:[+]`) signs. `pass:[`This *markup*`]` shows as `This *markup*`, but `pass:[`+This other *markup*+`]` shows as `+This other *markup*+`.
-
-`pass:[`_Constant Width Italic_`]`
-`_Monospaced and italicized_` text indicates where text should be replaced with user-supplied values or by values determined by context. The AsciiDoc markup is one grave accent sign and one underscore on either side of the text. Note that the grave accent (`pass:[`]`) must be on the outside and the underscore (`_`) pair on the inside.
-
-Should you need to mark only a few letters of a word in  constant width italic, or a word that abuts a non-whitespace character, double up the markup on either side of the text, like this: `pass:[``__Part__``ial word constant w``__id__``th italic]`.
-
-`+~subscript~+`
-For ~subscript~ text, use a tilde character (`~`) on either side of the subscript text.
-
-`^superscript^`
-For ^superscript^ text, use a caret (`^`) character on either side of the superscript text.
+Constant width, or `monospaced`, text is used for code, as well as within paragraphs to refer to program elements such as variable or function names, databases, data types, environment variables, statements, and keywords. The AsciiDoctor markup is one grave accent sign on either side of the text to monospaced.
 
 Hyperlinks:
 For hyperlinks to external sources, just add the full URL string followed by brackets containing the text you'd like to appear with the URL. The bracketed text will become a clickable link in web versions. In print versions, it will appear in the text, followed by the actual URL in parenthesis.
@@ -237,41 +132,10 @@ The markup looks like this:
 Visit https://www.gbif.org/[GBIF.org].
 ----
 
-==== Quotes
-To add a block quote to your text, use the word quote inside single brackets, followed by a comma and the full name of the quote’s source. The text of the quote itself should appear immediately below, with four underscore characters above and below it as in this example:
-
-----
-[quote,Publius Cornelius Tacitus]
-____
-mihi, quanto plura recentium seu veterum revolvo, tanto magis ludibria rerum mortalium cunctis in negotiis obversantur.
-____
-----
-
-And here’s how it renders:
-
-[quote, Publius Cornelius Tacitus]
-____
-mihi, quanto plura recentium seu veterum revolvo, tanto magis ludibria rerum mortalium cunctis in negotiis obversantur.
-____
-
-==== Sidebars
-Sidebar markup looks like this:
-
-----
-.Sidebar Title
-****
-Sidebar text is surrounded by four asterisk characters above and below.
-****
-----
-Sidebars render like this:
-
-.Sidebar Title
-****
-Sidebar text is surrounded by four asterisk characters above and below.
-****
+_https://asciidoctor.org/docs/user-manual/#text-formatting[Continue reading about text formatting in the AsciiDoctor User Guide]._
 
 ==== Admonitions
-AsciiDoc allows authors to call out supplemental admonitions in the form of notes, tips, warnings and cautions. 
+AsciiDoctor allows authors to call out supplemental admonitions in the form of notes, tips, warnings and cautions.
 
 For a note, the markup looks like this:
 
@@ -289,72 +153,33 @@ And here’s how it renders:
 Past trends are no guarantee of future performance.
 ====
 
-Or you could use a warning:
-----
-.Warning Title
-[WARNING]
-====
-But first, a word of warning:
-====
-----
-
-Warnings render like this:
-
-[WARNING]
-====
-But first, a word of warning:
-====
-
-Finally, here’s a caution, which can add supplemental information to your text.
-
-----
-[CAUTION]
-====
-Exercise extreme caution when opening.
-====
-----
-
-This is how cautions render:
-
-[CAUTION]
-====
-Exercise extreme caution when opening.
-====
-
-Each of these admonitions can also include titles. To add a title, add a line like this before the adminition.
-----
-.Tip Title
-----
-
-You’d create a tip with a title like so:
-----
-.Bet on Stewball
-[TIP]
-====
-You might win.
-====
-----
-
-…which will yield this result:
-
-.Bet on Stewball
-[TIP]
-====
-You might win.
-====
-
-There is also a short for, which is appropriate for a single sentance:
+There is also a short form, which is appropriate for a single sentance:
 
 ----
 NOTE: Past trends are no guarantee of future performance
-
-WARNING: But first, a word of warning:
-
-CAUTION: Exercise extreme caution when opening.
-
-TIP: You might win.
 ----
 
+_https://asciidoctor.org/docs/user-manual/#admonition[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
+
+=== Structuring the document
+
+All documents whose primary language is English start from the file `index.en.adoc`.  Using the https://asciidoctor.org/docs/user-manual/#include-directive[`include` directive] allows a single document to be spread across multiple files.  This makes editing (especially collaborative editing) easier, helps translators, and simplifies reordering sections of a document.  
+
+Except for the primary file being called `index.en.adoc`, there are no hard restrictions on how a document must be structured.  It is probably easiest for editors to structure documents with number-prefixed filenames, preferably with large intervals to allow new sections to be inserted.
+
+----
+├── index.en.adoc
+├── 100.en.adoc
+├── 200.en.adoc
+├── 250.en.adoc <1>
+├── 300.en.adoc
+└── 400.en.adoc
+----
+<1> This file was presumably added later, between `200` and `300`.
+
+See the section on <<translation,translating documents>> when adding, changing or deleting document files.
+
+[[source_code]]
 === Document “source code”
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
@@ -367,50 +192,72 @@ Contributors can edit the source code either in a web browser using the GitHub i
 
 NOTE: Many tutorials for using both Git and Github are available on the web.
 
-==== Document versions
+=== Document versions
 
-Some documents are published as multiple versions.  This is done using _branches_ in Git: the name of the branch, such as `1.0` or `2019`, is the identifier for the version.  This allows for edits to old versions, such as updating a link or making correcting a syntax error in the document.
+Some documents are published as multiple versions.  This is done using _branches_ in Git: the name of the branch, such as `1.0` or `2019`, is the identifier for the version.  This allows for edits to old versions, such as updating a link or correcting a syntax error in the document.
 
 // For multi-version projects, Jenkins is set to build from every branch, and deploy to a subdirectory on the webserver.
 
-=== AsciiDoctor
-
-GBIF documentation is maintained and published using a fast text processor and publishing toolchain called _AsciiDoctor_.  AsciiDoctor converts the AsciiDoc syntax into the required formatting depending on the output format.
-
-The document (or parts of it) is stored in files with the extension `.en.adoc`, where `.en.` indicates the language using ISO two-letter language codes. Other source files such as images have their usual extensions.
-
-The main document that compiles any given document is called `index.en.adoc`.
-
 === Generating the document
 
-The source code in the repository is converted into the finished HTML and PDF documents using the _Asciidoctor_ tool.  Every time a change is made to the repository, the GBIF build server is notified.  It retrieves the document source code, generates the document, and copies the formatted documents to a webserver.
+The source `.adoc` files in the repository are converted into the finished HTML and PDF documents using the _AsciiDoctor_ tool.  Every time a change is made to the repository, the https://builds.gbif.org/[GBIF build server] is notified.  It retrieves the document source code, generates the document (in HTML and PDF, and in all available languages), then copies the formatted documents to a webserver.
 
 A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you may need to inspect the log file to see what the problem is.
 
 === Local document build
 
-If you are familiar with software development tools you can build a document on your own computer - this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  You can then build the HTML document with this command, run from the top level directory:
+If you are familiar with software development tools you can build a document on your own computer — this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  Then, open a terminal window and navigate using the `cd` command to the top-level directory of your documen — for this document, it would be `doc-documentation-guidelines`.  You can then build the HTML document with this command:
 
 `+docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidoctor-toolkit+`
 
-The resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.
+Assuming all is well, the resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.  The output from the command should provide clues if there are problems.
 
-=== Further guidelines
+[[issues_pull_requests]]
+=== Handling issues and pull requests
 
-_We should perhaps include in this document:_
+*_This section has not been written._*
 
-* Handling issues in GitHub,
-* Handling pull requests,
-* Who to ask for help.
+=== Publishing a document
 
-== Guidelines for document translators
+Here, publishing a document means building the document for `*docs.gbif.org*`, rather than the test system `*docs.gbif-uat.org*`.
 
-The translation uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.  To translate a document into a new language, or update an existing translation, you will need to:
+TODO: Document the process, which is done by making a release from GitHub, but currently needs some care to ensure the build system (Jenkins) is configured correctly.
 
-. For a new language, copy the `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code].  For example this would be `da.po` for a Danish translation.
+=== Who to ask for help
+
+*_This section has not been written. Ask Kyle or Matt, or create an issue._*
+
+[[translation]]
+== Guidelines for translating documents
+
+Documents to be translated need some set-up.
+
+The translation system uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.
+
+// TODO: change the example to point to the template, which doesn't yet have this file.
+. A file `po4a.conf` needs to exist, as in https://github.com/gbif/doc-gbif-communications-strategy/blob/1.0/po4a.conf[this example].  Each `*.en.adoc` file needs an entry in `po4a.conf`:
++
+`+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc+`
+
+. The build server will create (or update) the translation template file `translations/index.pot` with the source (English) text.  It does this every time a build runs.
+. The document should be setup on Crowdin.  [TODO – how?]  This generates a file `crowdin.yml`.
+. As translators add translations to the text, Crowdin will make a <<issues_pull_requests,pull request>> on the repository.  This should be merged.
+. The build server will then rebuild the document.
+
+
+[sidebar]
+.Alternatives to Crowdin
+--
+It is also possible to translate documents without Crowdin, using desktop tools instead.  The translators then need to use Git/GitHub.  These additional steps are needed:
+
+. For a new language, copy the generated `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code].  For example this would be `da.po` for a Danish translation.
 . To update a translation, open the `xx.po` file in a po-file editor and choose the option to "Update from POT file" or similar.
 . Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
 . Use Git/GitHub to replace the old translation file with your updated translation file.
+. Push the changes, and the build server will rebuild the document
+
+*It is not recommended to use both methods on the same document.  If translations conflict they would not be lost, but the resulting mess can be confusing to sort out using Git.*
+--
 
 == Guidelines for software developers
 
@@ -419,7 +266,7 @@ NOTE: This section is technical information for GBIF software developers maintai
 The documents combine several small Linux tools:
 
 * Git, for source control,
-* https://asciidoctor.org/[Asciidoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
+* https://asciidoctor.org/[AsciiDoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
 * https://po4a.org/[po4a], for translations,
 * https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
 * Docker, to ensure consistent builds,
@@ -432,7 +279,9 @@ The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-too
 New documents should be made by:
 
 . Cloning the https://github.com/gbif/doc-template[doc-template] repository, with a name beginning with `doc-`,
-. Adding a new job to Jenkins.
+. Setting the branch name appropriately, if the document is to be versioned,
+. Adding a new job to Jenkins,
+. If required, creating a `po4a.conf` file and adding the document to Crowdin.
 
 ==== Jenkins setup
 
@@ -446,6 +295,10 @@ New documents should be made by:
 * Set up a new webhook, with the path e.g. `http://builds.gbif.org/job/doc-documentation-guidelines/buildWithParameters?token=XXXXXXXXXX` (with the token from above)
 * The secret text seems not to matter
 * Select the individual events `Pushes` and `Releases`
+
+==== Crowdin setup
+
+* [TODO]
 
 === Outstanding issues:
 
