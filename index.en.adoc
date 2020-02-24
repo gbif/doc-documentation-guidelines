@@ -285,14 +285,24 @@ New documents should be made by:
 
 ==== Jenkins setup
 
-* Set a `payload` parameter to receive the GitHub information
-* *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`
-* *Build Triggers*: Set an authentication token
+* Create a new job, based on:
+** the `doc-template` job, for unversioned documents
+** the `doc-effective-nodes-guidance` job, for versioned documents
+
++
+You need to change the Git repository paths ("Source Code Management" section)
+
+* Change the `Authentication Token` to something new ("Build Triggers" section)
+
+These things should be copied across from the existing build:
+
+* A `payload` parameter to receive information from GitHub.
+* *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`.  This supports versioned documents, and updating the translation index.
 *  Set a build script, which varies depending whether the document is keeping old versions deployed.
 
 ==== GitHub setup
 
-* Set up a new webhook, with the path e.g. `http://builds.gbif.org/job/doc-documentation-guidelines/buildWithParameters?token=XXXXXXXXXX` (with the token from above)
+* Set up a new webhook, with the path e.g. `http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX` (with the token from above)
 * The secret text seems not to matter
 * Select the individual events `Pushes` and `Releases`
 
