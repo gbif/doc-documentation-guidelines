@@ -5,6 +5,6 @@ https://builds.gbif.org/job/doc-documentation-guidelines/[image:https://builds.g
 
 This document provides a guide to our documentation system.
 
-The document is available as https://docs.gbif-uat.org/documentation-guidelines/en/[HTML] and https://docs.gbif-uat.org/documentation-guidelines/en/gbif-documentation-guidelines.en.pdf[PDF].
+The document is available as https://docs.gbif.org/documentation-guidelines/en/[HTML] and https://docs.gbif.org/documentation-guidelines/en/gbif-documentation-guidelines.en.pdf[PDF].
 
 _This is information *about* this document’s source code.  It is not part of the document._
