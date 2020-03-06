@@ -268,8 +268,9 @@ The process starts from the premise that authors and reviewers are part of the s
 Each document's source text is freely and openly available and maintained in a public GitHub repository, or "repo". The use of GitHub enables reviewers and users to raise issues and track their resolution. Reviewers and users can offer comments, suggestions and corrections at any stage of the document's life cycle, making it easier to make corrections to current versions and update future ones while ensuring community access to accurate, well-maintained guidance and information.
 
 Staff from the GBIF Secretariat commits to two operational principles to ensure the transparency and effectiveness of the community review process:
+
 . Individual contributions by community members will be properly credited and acknowledged
-. Open issues will be resolved in timely fashion, whether by the authors or by Secretariat staff
+. Open issues will be resolved in timely fashion, either by the authors or by Secretariat staff, in agreement with the authors
 
 === Best practices for community peer reviewers
 
