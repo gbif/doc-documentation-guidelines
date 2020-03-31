@@ -306,6 +306,7 @@ As a matter of practice, the Secretariat will 'decommission' and remove earlier 
 . Include a reference to the earlier version in the current document's metadata on GBIF.org (e.g. https://www.gbif.org/document/80925)
 
 This approach achieves several key goals:
+
 * Previous versions will be permanently discoverable using a persistent identifier
 * GBIF will no longer have to manage either the old file or its URL (or, as is more often the case, URLs, plural) 
 * Users searching on GBIF.org will retrieve only the current documents, which then reference older versions 
