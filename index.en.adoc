@@ -62,14 +62,15 @@ Each year, the EP will review available documentation and identify priority cand
 
 Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in plain text files.  This means
 
-* Authors need not worry about maintaining a consistent style,
-* Changes to the document can be tracked and managed using general tools,
-* The same source files can produce multiple outputs automatically, such as HTML and PDF,
-* Document translations can be tracked.
+* Authors need not worry about maintaining a consistent style
+* Changes to the document can be tracked and managed using general tools
+* The same source files can produce multiple outputs automatically, such as HTML and PDF
+* Document translations can be tracked
 
 Of course, that does mean learning about some different tools — but the ones we have chosen are widely used in the publishing, software development and translation communities.
 
 === Writing in AsciiDoctor
+
 AsciiDoctor is a text document format for writing (among other things) books, ebooks, and documentation. It is similar to wiki markup — if you can write a Wikipedia article, then you’ll have no problem with AsciiDoctor.
 
 .AsciiDoctor User Guide
@@ -81,6 +82,7 @@ The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides a
 Here are the most common parts of AsciiDoctor markup:
 
 ==== Text
+
 Regular paragraph text does not need any special markup in AsciiDoctor. Just add a blank line both above and below each paragraph, and the first word in the paragraph should not have a space before it. Here are some example paragraphs in AsciiDoctor:
 
 ----
@@ -91,18 +93,19 @@ This is a second example paragraph in AsciiDoctor. Note that there's a line brea
 
 [[chapters]]
 ==== Chapters and headings
+
 The top of each chapter file should begin with a chapter title preceded by two equals signs. It's good practice to always include a unique ID string above the chapter title, surrounded in double brackets, for example:
 
 ----
 [[unique_chapter_id]]
 == Chapter Title
-
 Chapter text begins here.
 ----
 
 The unique ID string is used to link directly to a chapter or section, such as <<chapters,this link to this section>>.  Readers can also link directly to a section, by using the § link that appears when the mouse hovers over a chapter heading.
 
 ===== Top-level heading
+
 Within a chapter, the first and highest heading level uses three equals signs:
 
 ----
@@ -135,6 +138,7 @@ Visit https://www.gbif.org/[GBIF.org].
 _https://asciidoctor.org/docs/user-manual/#text-formatting[Continue reading about text formatting in the AsciiDoctor User Guide]._
 
 ==== Admonitions
+
 AsciiDoctor allows authors to call out supplemental admonitions in the form of notes, tips, warnings and cautions.
 
 For a note, the markup looks like this:
