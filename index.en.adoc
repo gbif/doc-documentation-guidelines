@@ -232,7 +232,7 @@ TODO: Document the process, which is done by making a release from GitHub, but c
 *_This section has not been written. Ask Kyle or Matt, or create an issue._*
 
 [[translation]]
-== Guidelines for translating documents
+== Technical guidelines for translated documents
 
 Documents to be translated need some set-up.
 
