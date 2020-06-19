@@ -286,9 +286,12 @@ Staff from the GBIF Secretariat commits to two operational principles to ensure 
 
 === How to submit your review comments and suggestions
 
-* If you have not already done so, https://github.com/[*sign up for a GitHub account*]. Again, to encourage transparency, choose a username that allows others in the community to identify and recognize you with relative ease.    
+* If you have not already done so, https://github.com/[*sign up for a GitHub account*]. Again, to encourage transparency, choose a username that allows others in the community to identify and recognize you with relative ease.
 * *Find the GitHub repository for the document under review*. The HTML version of any document provides a link to "Edit on GitHub" and its source repository near the top of its tree navigation. Reviewers can also search for the repository through the https://github.com/gbif[GBIF GitHub organization page]. Searches can be more efficient knowing that the names of the repositories for GBIF's digital documentation all begin with the prefix /doc-/, followed by a shortened, plain-language version of the title.  
 * *Submit your comments as issues in the document's GitHub repository*. The 'Issues' tab is second from the left in every repository. 
+
+video::430632177[vimeo]
+
 * Where possible, *group similar comments in a single issue*. For example, reviewers who identify (heaven forbid!) multiple spelling or punctuation errors should consider submitting such items in a single issue. Then, when commenting on content or offering other suggestions, the same reviewer should include those in a second issue. 
 * *Use deep links to document sections*. Reviewers can link to any section heading in any document, thereby providing an accurate citation of where the issue or problem you wish to identify arises.  Mousing over the left end of the heading will cause the appearance of a section symbol—*§*—which users can then right-click or option-click to copy a direct link to that location in the document. The link available by right- or option-clicking the section symbol in the example pictured below, for example, is 
 ....
