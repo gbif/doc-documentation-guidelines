@@ -1,10 +1,17 @@
 = Contributing to this document
 
-https://www.gbif.org[GBIF] invites community members to contribute to our [digital documentation system](). 
+https://www.gbif.org[GBIF] invites community members to contribute to our https://#[digital documentation system]. 
 
 If you are a first-time user, please don't let the code-developer vernacular of 'branches', 'pull requests' and 'commits' frighten you off. Our use of GitHub, while squarely based on its technical capabilities, is equally important from an editorial perspective. The design and format of the materials we publish through this system aims to ensure that any guidance we prepare and commission is uniform, reliable, reusable, versioned, and up-to-date. Your contributions are vital to achieving this. 
 
 We code documents in this system using a lightweight code called https://asciidoctor.org/docs/user-manual/[AsciiDoc] (see some https://github.com/gbif/doc-documentation-guidelines/blob/1.0/index.en.adoc#guidelines-for-document-authors[key tips here]). We apply United Nations editorial conventions (tl;dr: British English with -ize endings) with regard to http://dd.dgacm.org/editorialmanual/ed-guidelines/style/spelling.htm/[spelling] and http://dd.dgacm.org/editorialmanual/[style].
+
+== How to contribute to this document as a peer-reviewer (tl;dr)
+
+0. https://www.vimeo.com/430640810[Create a GitHub account].
+1. Read the documents
+2. See something? Say something by https://vimeo.com/430632177[creating an issue]
+3. Follow and support the conversation
 
 == What are we looking for?
 
@@ -47,27 +54,16 @@ Existing non-English documents and translations
 
 == What are we *not* looking for?
 
-We use GitHub to manage and maintain the source material of our documentation because it is findable and accessible  . We always welcome suggestions  
+We use GitHub to manage the source material of our documentation openly to encourage community members to help us maintain it and keep it up-to-date. While we welcome your suggestions on such topics, the peer-review process should focus on the content of any given document rathter than less editorial issues like the documents' technical set-up and configuration, code or security issues. If you have issues you would like to raise on such matters, please contact us at mailto:communication@gbif.org[communication@gbif.org].
 
-* Code and code review
-* Technical set-up and configuration
-* Security issues
+== Credit
 
-== How to contribute
+GBIF will give proper credit and acknowledgement of community members who participate in the peer-review process. While this may initially take the form of a curated list of contributors, we are committed to improving these processes, particularly where the use of persistent identifiers like https://orcid.org/[ORCID IDs] can efficiently record community members' activities and automate the production of annual reports and metrics. 
 
-0. https://www.vimeo.com/430640810[Create a GitHub account].
-1. Read the documents
-2. See something? Say something by https://vimeo.com/430632177[creating an issue]
-3. Follow and support the conversation
+== Licensing
 
-=== Credit
+All GBIF digital documentation is licensed under https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-Share Alike 4.0 International]. As a result, you are free to share and adapt it provided that you a) give appropriate credit, link to the license and indicate if changes were made and b) distribute your contributions under the same licence.
 
-a
+== Code of conduct
 
-=== Licensing
-
-a
-
-=== Code of conduct
-
-All interactions must comply with the https://www.gbif.org/code-of-conduct[Code of Conduct for GBIF activities].
+All interactions in the GBIF community peer-review process must comply with GBIF's https://www.gbif.org/code-of-conduct[Code of Conduct].
