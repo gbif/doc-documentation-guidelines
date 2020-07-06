@@ -1,0 +1,54 @@
+== Community peer-review process
+
+Community peer-review may be just a single step in GBIF's digital documentation workflow, but it provides an important opportunity for members of the GBIF community of practice—the intended users and beneficiaries of these documents—to guide the documents' development by offering direct input and feedback. While this process is first and foremost intended to ensure the quality of the documentation, it also serves as a mechanism for fostering community discussion and collaboration.
+
+The process starts from the premise that authors and reviewers are part of the same community. The fact that their identities are not concealed at any point during the process, reviewers and authors should be encouraged toward open, honest and collegial exchanges, with a focus on constructive criticism even where difference of opinion exist. The focus of reviewers should be to support authors in improving their work to the benefit of the broader biodiversity informatics community. All community members are responsible for ensuring that their own actions encourage a "safe, hospitable, and productive environment" that is "professional, respectful and harrassment-free for all participating," in adherence with the https://www.gbif.org/code-of-conduct[GBIF Code of Conduct].
+
+Each document's source text is freely and openly available and maintained in a public GitHub repository, or "repo". The use of GitHub enables reviewers and users to raise issues and track their resolution. Reviewers and users can offer comments, suggestions and corrections at any stage of the document's life cycle, making it easier to make corrections to current versions and update future ones while ensuring community access to accurate, well-maintained guidance and information.
+
+Staff from the GBIF Secretariat commits to two operational principles to ensure the transparency and effectiveness of the community review process:
+
+. Individual contributions by community members will be properly credited and acknowledged
+. Open issues will be resolved in timely fashion, either by the authors or by Secretariat staff, in agreement with the authors
+
+=== Best practices for community peer reviewers
+
+* Recognizing that members of our community are all extremely busy, if you intend to provide comments during the community peer-review process, set aside sufficient time to read and digest the document (the PDF version of each document offers a convenient tool for this purpose). 
+* Use a first read to form a general impression of the document, noting any major problems or concerns.
+* Keeping your notes handy, begin a second read-through in which you flag possible issues point-by-point. 
+* Comment on the validity of the guidance provided in the documentation, identifying possible errors and evaluating the approaches
+* Identify any references, citations, precedents or examples that you feel may be missing or mischaracterized 
+
+=== How to submit your review comments and suggestions
+
+* If you have not already done so, https://github.com/[*sign up for a GitHub account*]. Again, to encourage transparency, choose a username that allows others in the community to identify and recognize you with relative ease.
+* *Find the GitHub repository for the document under review*. The HTML version of any document provides a link to "Edit on GitHub" and its source repository near the top of its tree navigation. Reviewers can also search for the repository through the https://github.com/gbif[GBIF GitHub organization page]. Searches can be more efficient knowing that the names of the repositories for GBIF's digital documentation all begin with the prefix /doc-/, followed by a shortened, plain-language version of the title.  
+* *Submit your comments as issues in the document's GitHub repository*. The 'Issues' tab is second from the left in every repository. 
+
+video::430632177[vimeo]
+
+* Where possible, *group similar comments in a single issue*. For example, reviewers who identify (heaven forbid!) multiple spelling or punctuation errors should consider submitting such items in a single issue. Then, when commenting on content or offering other suggestions, the same reviewer should include those in a second issue. 
+* *Use deep links to document sections*. Reviewers can link to any section heading in any document, thereby providing an accurate citation of where the issue or problem you wish to identify arises.  Mousing over the left end of the heading will cause the appearance of a section symbol—*§*—which users can then right-click or option-click to copy a direct link to that location in the document. The link available by right- or option-clicking the section symbol in the example pictured below, for example, is 
+....
+https://docs.gbif.org/effective-nodes-guidance/1.0/en/#_suggested_citation 
+.... 
+
+image:img/section-symbol.png[float="left"]
+
+* *Track the progress and resolution of your issues*. We encourage you to sign up for notifications of actions that others take in connection with the issues you submit. Doing so may permit direct, reciprocal discussion between authors and reviewers, as and where appropriate. 
+
+== 'Decommissioning' old documents
+
+As a matter of practice, the Secretariat will 'decommission' and remove earlier versions of documents from GBIF through the following series of steps:
+
+. Register a GBIF DOI via DataCite for the previous version of the document (provided that one does not already exist)
+. Produce an archival standard version (PDF/A) of the document—or documents, if translations are available
+. Deposit the file(s) in Zenodo with the assigned DOI
+. Update the DataCite metadata to resolve the DOI to the new Zenodo deposit
+. Include a reference to the earlier version in the current document's metadata on GBIF.org (e.g. https://www.gbif.org/document/80925)
+
+This approach achieves several key goals:
+
+* Previous versions will be permanently discoverable using a persistent identifier
+* GBIF will no longer have to manage either the old file or its URL (or, as is more often the case, URLs, plural) 
+* Users searching on GBIF.org will retrieve only the current documents, which then reference older versions 

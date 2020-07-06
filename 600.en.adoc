@@ -1,0 +1,294 @@
+== Technical guidance
+
+[authors]
+=== For authors
+
+
+[structure]
+==== Structuring the document
+
+All documents whose primary language is English start from the file `index.en.adoc`.  Using the https://asciidoctor.org/docs/user-manual/#include-directive[`include` directive] allows a single document to be spread across multiple files.  This makes editing (especially collaborative editing) easier, helps translators, and simplifies reordering sections of a document.  
+
+Except for the primary file being called `index.en.adoc`, there are no hard restrictions on how a document must be structured.  It is probably easiest for editors to structure documents with number-prefixed filenames, preferably with large intervals to allow new sections to be inserted.
+
+----
+├── index.en.adoc
+├── 100.en.adoc
+├── 200.en.adoc
+├── 250.en.adoc <1>
+├── 300.en.adoc
+└── 400.en.adoc
+----
+<1> This file was presumably added later, between `200` and `300`.
+
+See the section on <<translation,translating documents>> when adding, changing or deleting document files.
+
+[asciidoc]
+==== Writing in AsciiDoctor
+
+AsciiDoctor is a text document format for writing (among other things) books, ebooks, and documentation. It is similar to wiki markup — if you can write a Wikipedia article, then you’ll have no problem with AsciiDoctor.
+
+.AsciiDoctor User Guide
+[TIP]
+====
+The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides an excellent reference to what's possible with AsciiDoctor.
+====
+
+Here are the most common parts of AsciiDoctor markup:
+
+[text]
+===== Text
+
+Regular paragraph text does not need any special markup in AsciiDoctor. Just add a blank line both above and below each paragraph, and the first word in the paragraph should not have a space before it. Here are some example paragraphs in AsciiDoctor:
+
+----
+This is an example paragraph written in AsciiDoctor. See, it's just plain text; no special markup necessary! Do make sure there aren't spaces or manual indentations at the beginning of your paragraph text.
+
+This is a second example paragraph in AsciiDoctor. Note that there's a line break and a blank line between paragraphs.
+----
+
+[[chapters]]
+===== Chapters and headings
+
+The top of each chapter file should begin with a chapter title preceded by two equals signs. It's good practice to always include a unique ID string above the chapter title, surrounded in double brackets, for example:
+
+----
+[[unique_chapter_id]]
+== Chapter Title
+Chapter text begins here.
+----
+
+The unique ID string is used to link directly to a chapter or section, such as <<chapters,this link to this section>>.  Readers can also link directly to a section, by using the § link that appears when the mouse hovers over a chapter heading.
+
+[toplevel]
+===== Top-level heading
+
+Within a chapter, the first and highest heading level uses three equals signs:
+
+----
+=== Top-Level Heading
+----
+
+Lower-level headings continue with additional `=` signs.
+
+_https://asciidoctor.org/docs/user-manual/#sections[Continue reading about section headings in the AsciiDoctor User Guide]._
+
+[inline]
+===== Inline Markup
+Here are some standard typographical conventions with explanations of how they're commonly used:
+
+`+_Italic_+` One underscore character on either side of text marks it as _italics_ in AsciiDoctor.
+
+`+*Bold*+` *Bolded text* is used to emphasize a word or phrase. The AsciiDoctor markup is one asterisk on either side of the text to be bolded.
+
+`pass:[`Constant Width`]`
+Constant width, or `monospaced`, text is used for code, as well as within paragraphs to refer to program elements such as variable or function names, databases, data types, environment variables, statements, and keywords. The AsciiDoctor markup is one grave accent sign on either side of the text to monospaced.
+
+Hyperlinks:
+For hyperlinks to external sources, just add the full URL string followed by brackets containing the text you'd like to appear with the URL. The bracketed text will become a clickable link in web versions. In print versions, it will appear in the text, followed by the actual URL in parenthesis.
+
+The markup looks like this:
+
+----
+Visit https://www.gbif.org/[GBIF.org].
+----
+
+_https://asciidoctor.org/docs/user-manual/#text-formatting[Continue reading about text formatting in the AsciiDoctor User Guide]._
+
+[admonitions]
+==== Admonitions
+
+AsciiDoctor allows authors to call out supplemental admonitions in the form of notes, tips, warnings and cautions.
+
+For a note, the markup looks like this:
+
+----
+[NOTE]
+====
+Past trends are no guarantee of future performance.
+====
+----
+
+And here’s how it renders:
+
+[NOTE]
+====
+Past trends are no guarantee of future performance.
+====
+
+There is also a short form, which is appropriate for a single sentance:
+
+----
+NOTE: Past trends are no guarantee of future performance
+----
+
+_https://asciidoctor.org/docs/user-manual/#admonition[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
+
+[[source_code]]
+=== Document “source code”
+
+The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
+
+These source files are stored in a _Git repository_, which (for GBIF) is managed by a commercial service, _GitHub_.
+
+The source code for this document is stored at https://github.com/gbif/doc-documentation-guidelines/, the source code for this part of the document can be seen https://raw.githubusercontent.com/gbif/doc-documentation-guidelines/master/index.en.adoc[here].
+
+Contributors can edit the source code either in a web browser using the GitHub interface or on a computer (including when offline) using Git. They may also submit https://github.com/gbif/doc-documentation-guidelines/issues[issues] that comment or flag problems for others to address, including outdated information, broken links, misspellings and the like.
+
+NOTE: Many tutorials for using both Git and Github are available on the web.
+
+=== Document versions
+
+Some documents are published as multiple versions.  This is done using _branches_ in Git: the name of the branch, such as `1.0` or `2019`, is the identifier for the version.  This allows for edits to old versions, such as updating a link or correcting a syntax error in the document.
+
+// For multi-version projects, Jenkins is set to build from every branch, and deploy to a subdirectory on the webserver.
+
+=== Generating the document
+
+The source `.adoc` files in the repository are converted into the finished HTML and PDF documents using the _AsciiDoctor_ tool.  Every time a change is made to the repository, the https://builds.gbif.org/[GBIF build server] is notified.  It retrieves the document source code, generates the document (in HTML and PDF, and in all available languages), then copies the formatted documents to a webserver.
+
+A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you may need to inspect the log file to see what the problem is.
+
+=== Local document build
+
+If you are familiar with software development tools you can build a document on your own computer — this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  Then, open a terminal window and navigate using the `cd` command to the top-level directory of your documen — for this document, it would be `doc-documentation-guidelines`.  You can then build the HTML document with this command:
+
+`+docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidoctor-toolkit+`
+
+Assuming all is well, the resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.  The output from the command should provide clues if there are problems.
+
+[[issues_pull_requests]]
+=== Handling issues and pull requests
+
+*_This section has not been written._*
+
+=== Publishing a document
+
+Here, publishing a document means building the document for `*docs.gbif.org*`, rather than the test system `*docs.gbif-uat.org*`.
+
+TODO: Document the process, which is done by making a release from GitHub, but currently needs some care to ensure the build system (Jenkins) is configured correctly.
+
+=== Who to ask for help
+
+*_This section has not been written. Ask Kyle or Matt, or create an issue._*
+
+[[translation]]
+== Technical guidelines for translated documents
+
+Documents to be translated need some set-up.
+
+The translation system uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.
+
+// TODO: change the example to point to the template, which doesn't yet have this file.
+. A file `po4a.conf` needs to exist, as in https://github.com/gbif/doc-gbif-communications-strategy/blob/1.0/po4a.conf[this example].  Each `*.en.adoc` file needs an entry in `po4a.conf`:
++
+`+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc+`
+
+. The build server will create (or update) the translation template file `translations/index.pot` with the source (English) text.  It does this every time a build runs.
+. The document should be setup on Crowdin.  [TODO – how?]  This generates a file `crowdin.yml`.
+. As translators add translations to the text, Crowdin will make a <<issues_pull_requests,pull request>> on the repository.  This should be merged.
+. The build server will then rebuild the document.
+
+
+[sidebar]
+.Alternatives to Crowdin
+--
+It is also possible to translate documents without Crowdin, using desktop tools instead.  The translators then need to use Git/GitHub.  These additional steps are needed:
+
+. For a new language, copy the generated `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code].  For example this would be `da.po` for a Danish translation.
+. To update a translation, open the `xx.po` file in a po-file editor and choose the option to "Update from POT file" or similar.
+. Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
+. Use Git/GitHub to replace the old translation file with your updated translation file.
+. Push the changes, and the build server will rebuild the document
+
+*It is not recommended to use both methods on the same document.  If translations conflict they would not be lost, but the resulting mess can be confusing to sort out using Git.*
+--
+
+
+
+=== Guidelines for software developers
+
+NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
+
+The documents combine several small Linux tools:
+
+* Git, for source control,
+* https://asciidoctor.org/[AsciiDoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
+* https://po4a.org/[po4a], for translations,
+* https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
+* Docker, to ensure consistent builds,
+* Apache, to serve the finished documents.
+
+The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-toolkit[Docker container], with some integration in the Jenkins build job.
+
+==== New documents
+
+New documents should be made by:
+
+. Cloning the https://github.com/gbif/doc-template[doc-template] repository, with a name beginning with `doc-`,
+. Setting the branch name appropriately, if the document is to be versioned,
+. Adding a new job to Jenkins,
+. If required, creating a `po4a.conf` file and adding the document to Crowdin.
+
+===== Jenkins setup
+
+* Create a new job, based on:
+** the `doc-template` job, for unversioned documents
+** the `doc-effective-nodes-guidance` job, for versioned documents
+
++
+You need to change the Git repository paths ("Source Code Management" section)
+
+* Change the `Authentication Token` to something new ("Build Triggers" section)
+
+These things should be copied across from the existing build:
+
+* A `payload` parameter to receive information from GitHub.
+* *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`.  This supports versioned documents, and updating the translation index.
+*  Set a build script, which varies depending whether the document is keeping old versions deployed.
+
+===== GitHub setup
+
+* Set up a new webhook, with the path e.g. `http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX` (with the token from above)
+* The secret text seems not to matter
+* Select the individual events `Pushes` and `Releases`
+
+===== Translation setup (po4a)
+
+Do this before setting up Crowdin
+
+* Create a `po4a.conf` file, based on this template:
+----
+# This is the translation configuration file.
+#
+# Any new file that requires translation must be added
+
+[po_directory] translations
+[options] opt:"-M utf-8 -A utf-8 -L utf-8 -k 0"
+
+[type:asciidoc] index.en.adoc $lang:index.$lang.adoc add_$lang:?translations/$lang.add
+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc
+[type:asciidoc] 200.en.adoc $lang:200.$lang.adoc
+…
+---
++ (This should be automated at some point.)
+* Push the change.  The build should generate a `translations/index.pot` file, the translation index.
+
+===== Crowdin setup
+
+* First ensure appropriate version branches are set up, and the translation (po4a) setup.
+* Add the gbif-crowdin GitHub user to the project, with "Admin" rights
+* Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration (GitHub authentication will be required).
+** Select the repository
+** Select the branch(es)
+** Change the "Service Branch Name" to `translation_*branchname*` (thus avoiding the mysterious abbreviation "i18n")
+** Set the Branch Configuration:
+*** Set the source to `/translations/index.pot`
+*** Set the translation to `/translations/%two_letters_code%.po`
+* Save all this.
+
+==== Outstanding issues:
+
+. Apply a custom style to the document,
+. Demonstrate embedding an image, and alternative (translated) images,
+. Decide a release process, possibly involving assigning DOIs.

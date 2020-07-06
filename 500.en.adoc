@@ -1,0 +1,24 @@
+== The Editorial Panel
+
+The Editorial Panel consists of a volunteer group of experts that, in coordination with GBIF Secretariat staff, will provide oversight, guidance and peer-review of the GBIF documentation. The EP will provide recommendations to the GBIF Secretariat on commissioning high-priority guidance from subject-matter experts, with the following responsibilities:
+
+.Prioritize needs both for updating/revising existing documentation and for generating new documentation.
+.Establish review process (how reviews will happen, how many members are required for review, timeline, etc.).
+.Make recommendations regarding the documentation system (via GitHub repositories) for future sustainability.
+.Review drafts and provide comments back to authors.
+
+=== Operations
+
+Each year, the Editorial Panel will review available documentation and identify priority candidates for updates. and will review and approve updated documentation for publication. The Editorial Panel should consult widely with other experts, institutions, initiatives andprojects within the biodiversity informatics community at-large when considering updates to and for new documentation.
+
+=== Annual process
+
+. The Editorial Panel will set annual priorities for documentation needs and make recommendations for calls for documentation as and when appropriate.
+. Calls will issued by GBIF Secretariat to the community when appropriate.
+. EP will review and make recommendations on documentation proposals.
+. The GBIF Secretariat will prepare and issue contracts with authors/teams of experts.
+. Authors will compile first draft drawing on community input when appropriate and submit to the Editorial Panel.
+. The Editorial Panel will review drafts and provide comments back to authors.
+. Authors will revise drafts based on Editorial Panel’s review.
+. Versions will be released publicly and openly.
+. The GBIF Secretariat will complete and issue derived products (translations, training modules, etc.).
