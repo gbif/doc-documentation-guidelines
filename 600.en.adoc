@@ -3,6 +3,7 @@
 [authors]
 === For authors
 
+NOTE: This section provides some basic technical orientation for authors commissioned to write documents. Both the https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide] and https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides much more detailed and comprehensive references for how to work with this lightweight markup format. 
 
 [structure]
 ==== Structuring the document
@@ -124,8 +125,23 @@ NOTE: Past trends are no guarantee of future performance
 
 _https://asciidoctor.org/docs/user-manual/#admonition[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
 
+=== For developers
+
+NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
+
+The documents combine several small Linux tools:
+
+* Git, for source control,
+* https://asciidoctor.org/[AsciiDoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
+* https://po4a.org/[po4a], for translations,
+* https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
+* Docker, to ensure consistent builds,
+* Apache, to serve the finished documents.
+
+The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-toolkit[Docker container], with some integration in the Jenkins build job.
+
 [[source_code]]
-=== Document “source code”
+==== Document “source code”
 
 The plain text files and other assets (images, data tables) that form each document comprises the _source code_.
 
@@ -137,19 +153,19 @@ Contributors can edit the source code either in a web browser using the GitHub i
 
 NOTE: Many tutorials for using both Git and Github are available on the web.
 
-=== Document versions
+==== Document versions
 
 Some documents are published as multiple versions.  This is done using _branches_ in Git: the name of the branch, such as `1.0` or `2019`, is the identifier for the version.  This allows for edits to old versions, such as updating a link or correcting a syntax error in the document.
 
 // For multi-version projects, Jenkins is set to build from every branch, and deploy to a subdirectory on the webserver.
 
-=== Generating the document
+==== Generating the document
 
 The source `.adoc` files in the repository are converted into the finished HTML and PDF documents using the _AsciiDoctor_ tool.  Every time a change is made to the repository, the https://builds.gbif.org/[GBIF build server] is notified.  It retrieves the document source code, generates the document (in HTML and PDF, and in all available languages), then copies the formatted documents to a webserver.
 
 A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you may need to inspect the log file to see what the problem is.
 
-=== Local document build
+==== Local document build
 
 If you are familiar with software development tools you can build a document on your own computer — this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  Then, open a terminal window and navigate using the `cd` command to the top-level directory of your documen — for this document, it would be `doc-documentation-guidelines`.  You can then build the HTML document with this command:
 
@@ -158,24 +174,20 @@ If you are familiar with software development tools you can build a document on 
 Assuming all is well, the resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.  The output from the command should provide clues if there are problems.
 
 [[issues_pull_requests]]
-=== Handling issues and pull requests
+==== Handling issues and pull requests
 
 *_This section has not been written._*
 
-=== Publishing a document
+==== Publishing a document
 
 Here, publishing a document means building the document for `*docs.gbif.org*`, rather than the test system `*docs.gbif-uat.org*`.
 
 TODO: Document the process, which is done by making a release from GitHub, but currently needs some care to ensure the build system (Jenkins) is configured correctly.
 
-=== Who to ask for help
-
-*_This section has not been written. Ask Kyle or Matt, or create an issue._*
-
 [[translation]]
-== Technical guidelines for translated documents
+==== Technical guidelines for translated documents
 
-Documents to be translated need some set-up.
+Translated versions of these documents require some additional set-up.
 
 The translation system uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.
 
@@ -203,23 +215,6 @@ It is also possible to translate documents without Crowdin, using desktop tools 
 
 *It is not recommended to use both methods on the same document.  If translations conflict they would not be lost, but the resulting mess can be confusing to sort out using Git.*
 --
-
-
-
-=== Guidelines for software developers
-
-NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
-
-The documents combine several small Linux tools:
-
-* Git, for source control,
-* https://asciidoctor.org/[AsciiDoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
-* https://po4a.org/[po4a], for translations,
-* https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
-* Docker, to ensure consistent builds,
-* Apache, to serve the finished documents.
-
-The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-toolkit[Docker container], with some integration in the Jenkins build job.
 
 ==== New documents
 
@@ -287,8 +282,8 @@ Do this before setting up Crowdin
 *** Set the translation to `/translations/%two_letters_code%.po`
 * Save all this.
 
-==== Outstanding issues:
+==== Outstanding issues
 
-. Apply a custom style to the document,
-. Demonstrate embedding an image, and alternative (translated) images,
+. Demonstrate embedding an image, and alternative (translated) images
+. Apply a custom style to the document
 . Decide a release process, possibly involving assigning DOIs.

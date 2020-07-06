@@ -1,6 +1,8 @@
-=== Guidelines for document authors
+== Guidelines for document authors
 
-Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in plain text files written in a lightweight markup language called https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc]. This approach means that:
+We code documents in this system using a lightweight code called https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc]. We apply http://dd.dgacm.org/editorialmanual/[United Nations editorial style conventions] and http://dd.dgacm.org/editorialmanual/ed-guidelines/style/spelling.htm/[spelling] (tl;dr: British English with -ize and -yse endings).
+
+We use AsciiDoc because it means that:
 
 * Authors need not worry about maintaining formatting.
 * Changes to both the document's content and structure can be tracked and managed using general tools.
@@ -9,4 +11,9 @@ Unlike a word processor like _Microsoft Word_, GBIF's documentation is stored in
 
 While this system does require learning some new tools, the ones we have chosen are widely used in the publishing, software development and translation communities. AsciiDoc is also relatively simple to work with and understand. If you've written or edited a Wikipedia article, you’ll have no problem with this format.
 
-We've pulled out details for a few of the more common uses of AsciiDoc markup https://#[in the technical guidelines below] to give you a flavour of it, but the https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides a comprehensive reference on how to work with this language. You can direct questions, comments or concerns about this approach to mailto:communication@gbif.org[communication@gbif.org].
+We've pulled out details for a few of the more common uses of AsciiDoc markup https://#[in the technical guidelines below] to give you a flavour of it. However, two resouces provide more detailed guidance:
+
+* The https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide], which provides a 'gentle introduction' to the format
+* The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide], which provides a comprehensive reference on how to work with this language. 
+
+If you have questions, comments or concerns—either specifically about AsciiDoc or about the overall use and approach of this format— please email us at mailto:communication@gbif.org[communication@gbif.org].

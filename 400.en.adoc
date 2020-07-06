@@ -1,0 +1,15 @@
+== 'Decommissioning' old documents
+
+As a matter of practice, the Secretariat will 'decommission' and remove earlier versions of documents from GBIF through the following series of steps:
+
+. Register a GBIF DOI via DataCite for the previous version of the document (provided that one does not already exist)
+. Produce an archival standard version (PDF/A) of the document—or documents, if translations are available
+. Deposit the file(s) in Zenodo with the assigned DOI
+. Update the DataCite metadata to resolve the DOI to the new Zenodo deposit
+. Include a reference to the earlier version in the current document's metadata on GBIF.org (e.g. https://www.gbif.org/document/80925)
+
+This approach achieves several key goals:
+
+* Previous versions will be permanently discoverable using a persistent identifier
+* GBIF will no longer have to manage either the old file or its URL (or, as is more often the case, URLs, plural) 
+* Users searching on GBIF.org will retrieve only the current documents, which then reference older versions 

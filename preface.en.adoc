@@ -3,4 +3,63 @@
 
 GBIF—the Global Biodiversity Information Facility—has long produced technical documentation on a range of topics relating to biodiversity informatics and open biodiversity data with the aim of supporting a global community of practice. 
 
-The GBIF Secretariat is now coordinating the development of such documentation while engaging its community to work with subject-matter experts commissioned to create and update under the guidance of an [editorial panel]. This goal of this approach is to provide uniform, reliable, reusable and versioned materials that can be easily updated while instilling community trust in the documentation and fostering its use. 
+With the help of the team from http://www.vertnet.org[VertNet], the GBIF Secretariat started coordinating the development of such documentation as part of its 2019 work programme, with the aim of engaging GBIF communities of practice to work with subject-matter experts commissioned to create and update under the guidance of an [editorial panel]. 
+
+This goal of this approach is to provide consistent, reliable, reusable and versioned materials that can be easily updated, instilling community trust in the documentation and fostering its wider adoption and use.
+
+=== Current and forthcoming documents
+
+[cols=4*,options="header"]
+|===
+| Title
+| Language
+| Authors
+| Translations
+
+| https://doi.org/10.15468/doc-gzjg-af18[Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad]
+| Spanish
+| https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
+| none
+
+| https://doi.org/10.15468/doc-5jp4-5g10[Current Best Practices for Generalizing Sensitive Species Occurrence Data]
+| English
+| https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman]
+| none
+
+| https://doi.org/10.15468/doc-z79c-sa53[Establishing an Effective GBIF Participant Node: Concepts and general considerations]
+| English
+| GBIF Secretariat
+| https://docs.gbif.org/effective-nodes-guidance/1.0/es/[Spanish] +
+https://docs.gbif.org/effective-nodes-guidance/1.0/fr/[French] + 
+https://docs.gbif.org/effective-nodes-guidance/1.0/pt/[Portuguese] (update pending)
+
+| https://doi.org/10.15468/doc-6yp9-9885[GBIF Communications Strategy]
+| English
+| GBIF Secretariat
+| https://docs.gbif-uat.org/gbif-communications-strategy/1.0/pt/[Portuguese]
+
+| *Publishing sequence-derived data through biodiversity discovery platforms*
+| English
+| Anders Andersson, Andrew Bissett, https://orcid.org/0000-0003-4529-6266[Anders G. Finstad], https://orcid.org/0000-0002-7535-9574[Frode Fossøy], https://orcid.org/0000-0002-2685-8078[Marie Grosjean], Michael Hope, https://orcid.org/0000-0002-5171-1668[Urmas Kõljalg], Daniel Lundin, https://orcid.org/0000-0002-8052-0107[R. Henrik Nilsson], https://orcid.org/0000-0003-4897-8422[Maria Prager], https://orcid.org/0000-0003-1691-239X[Thomas Stjernegaard], https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen] and https://orcid.org/0000-0002-2919-1168[Dmitry Schigel] 
+| none
+
+| *Georeferencing Best Practices*
+| English
+| https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
+| none
+
+| *Georeferencing Quick Reference Guide*
+| English
+| https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Maria Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A Bloom]
+| none
+
+| *Georeferencing Calculator Manual*
+| English
+| https://orcid.org/0000-0003-1273-1807[David A. Bloom], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek] & https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] 
+| none
+
+| *GBIF Documentation Guidelines* (this document)
+| English
+| GBIF Secretariat
+| none
+|===
