@@ -9,7 +9,7 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 
 === Current and forthcoming documents
 
-[cols=4*,options="header"]
+[cols=4*,"3,1,3,1",options="header"]
 |===
 | Title
 | Language
