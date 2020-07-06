@@ -1,6 +1,5 @@
 == Technical guidance
 
-[authors]
 === For authors
 
 NOTE: This section provides some basic technical orientation for authors commissioned to write documents. Both the https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide] and https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides much more detailed and comprehensive references for how to work with this lightweight markup format. 

@@ -1,27 +1,27 @@
 ifdef::backend-html5[]
-.https://www.gbif.org/occurrence/1265538197[_Cyperus papyrus_ L.], observed in Mexico by Alfonso Gutiérrez Aldana.  Photo (via iNaturalist) licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+.Egyptian paperplant (_Cyperus papyrus_)], Chapultepec, Mexico City. Photo 2016 Alfonso Gutiérrez Aldana via https://www.gbif.org/occurrence/1265538197[iNaturalist Research-grade Observations] licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
 image::1265538197-Cyperus-papyrus.jpg[Photograph of _Cyperus papyrus_ L.]
 endif::backend-html5[]
 
 == Colophon
 
 === Suggested citation
-GBIF Secretariat (2020) GBIF Documentation Guidelines. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-xxxx-xxxx.
+GBIF Secretariat (2020) GBIF Documentation Guidelines. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-5xs6-hm38.
 
 === Contributors
 
-Matthew Blissett & Kyle Copas
+https://orcid.org/0000-0003-0623-6682[Matthew Blissett] & https://orcid.org/0000-0002-6590-599X[Kyle Copas]
 
 === Licence
 The document _GBIF Documentation Guidelines_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
-=== URI persistente
-https://doi.org/10.15468/doc-xxxx-xxxx
+=== Persistent URI
+https://doi.org/10.35035/doc-5xs6-hm38
 
 === Document control
-July 2020.
+Updated July 2020
 
 === Cover image
 
 // Caption. Credit, source, licence.
-Western honey bee (_Apis mellifera_), Hardy County, Florida, United States. Photo 2018 thebugroomno2 via https://www.gbif.org/occurrence/1945467387[iNaturalist research-grade observations], licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+Egyptian paperplant (_Cyperus papyrus_)], Chapultepec, Mexico City. Photo 2016 Alfonso Gutiérrez Aldana via https://www.gbif.org/occurrence/1265538197[iNaturalist Research-grade Observations] licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].

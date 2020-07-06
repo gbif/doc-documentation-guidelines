@@ -1,3 +1,4 @@
+[improving]
 == Improve this document
 
 https://www.gbif.org[GBIF] invites community members to contribute to, improve and maintain our https://#[digital documentation ].
