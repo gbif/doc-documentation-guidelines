@@ -9,7 +9,7 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 
 === Current and forthcoming documents
 
-[cols="3,1,4,1",options="header"]
+[cols="4,1,4,1",options="header"]
 |===
 | Title
 | Language
@@ -29,9 +29,10 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 | https://doi.org/10.15468/doc-z79c-sa53[Establishing an Effective GBIF Participant Node: Concepts and general considerations]
 | English
 | GBIF Secretariat
-| https://docs.gbif.org/effective-nodes-guidance/1.0/es/[Spanish] +
-https://docs.gbif.org/effective-nodes-guidance/1.0/fr/[French] + 
-https://docs.gbif.org/effective-nodes-guidance/1.0/pt/[Portuguese] (update pending)
+| https://docs.gbif.org/effective-nodes-guidance/1.0/es/[Spanish], +
+https://docs.gbif.org/effective-nodes-guidance/1.0/fr/[French]. + 
+& https://docs.gbif.org/effective-nodes-guidance/1.0/pt/[Portuguese] +
+(update pending)
 
 | https://doi.org/10.15468/doc-6yp9-9885[GBIF Communications Strategy]
 | English
