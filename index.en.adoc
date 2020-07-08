@@ -1,13 +1,15 @@
 = GBIF Documentation Guidelines
 GBIF Secretariat <communication@gbif.org>
+:toc:
 :toclevels: 2
+:numbered:
 :revnumber: {git-metadata-branch}
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
 :title-logo-image: 1265538197-Cyperus-papyrus.jpg
 :license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ifdef::backend-html5[]
-_languageLinks:pdf[This document is also available in,PDF format]languageLinks:languages[and in other languages:,]._
+languageLinks:combined[]
 endif::backend-html5[]
 
 :sectnums!:

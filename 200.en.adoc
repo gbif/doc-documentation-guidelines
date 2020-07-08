@@ -11,7 +11,7 @@ We use AsciiDoc because it means that:
 
 While this system does require learning some new tools, the ones we have chosen are widely used in the publishing, software development and translation communities. AsciiDoc is also relatively simple to work with and understand. If you've written or edited a Wikipedia article, you’ll have no problem with this format.
 
-We've pulled out details for a few of the more common uses of AsciiDoc markup https://#[in the technical guidelines below] to give you a flavour of it. However, two resouces provide more detailed guidance:
+We've pulled out details for a few of the more common uses of AsciiDoc markup https://#[in the technical guidelines below] to give you a flavour of it. However, two resources provide more detailed guidance:
 
 * The https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide], which provides a 'gentle introduction' to the format
 * The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide], which provides a comprehensive reference on how to work with this language. 

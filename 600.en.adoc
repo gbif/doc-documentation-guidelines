@@ -117,7 +117,7 @@ And here’s how it renders:
 Past trends are no guarantee of future performance.
 ====
 
-There is also a short form, which is appropriate for a single sentance:
+There is also a short form, which is appropriate for a single sentence:
 
 ----
 NOTE: Past trends are no guarantee of future performance
@@ -167,7 +167,7 @@ A log file of recent builds is kept by the build server.  If there is a syntax e
 
 ==== Local document build
 
-If you are familiar with software development tools you can build a document on your own computer — this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  Then, open a terminal window and navigate using the `cd` command to the top-level directory of your documen — for this document, it would be `doc-documentation-guidelines`.  You can then build the HTML document with this command:
+If you are familiar with software development tools you can build a document on your own computer — this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  Then, open a terminal window and navigate using the `cd` command to the top-level directory of your document — for this document, it would be `doc-documentation-guidelines`.  You can then build the HTML document with this command:
 
 `+docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidoctor-toolkit+`
 
