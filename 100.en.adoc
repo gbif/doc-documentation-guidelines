@@ -11,4 +11,4 @@ Staff from the GBIF Secretariat commits to two operational principles to ensure 
 . Individual contributions by community members will be properly credited and acknowledged
 . Open issues will be resolved in timely fashion, either by the authors or by Secretariat staff, in agreement with the authors
 
-> <<improving,Learn how to help improve these documents as a community peer-reviewer>>
+> https://docs.gbif.org/contributing/[Learn how to help improve these documents as a community peer-reviewer]
