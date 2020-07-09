@@ -33,6 +33,16 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 https://docs.gbif.org/effective-nodes-guidance/1.0/fr/[French] + 
 https://docs.gbif.org/effective-nodes-guidance/1.0/pt/[Portuguese] (update pending)
 
+| https://doi.org/10.35035/p93g-te47[Advancing the Catalogue of the World’s Natural History Collections], v2.0.
+| English
+| https://orcid.org/0000-0001-6492-4016[Donald Hobern], https://orcid.org/0000-0003-0116-3445[Alex Asase], https://orcid.org/0000-0002-0596-5376[Quentin Groom], Maofang Luo, https://orcid.org/0000-0003-2639-7520[Deborah Paul], https://orcid.org/0000-0001-6215-3617[Tim Robertson], https://orcid.org/0000-0002-4048-7728[Patrick Semal], https://orcid.org/0000-0002-8613-7133[Barbara Thiers], https://orcid.org/0000-0001-6496-1423[Matt Woodburn] & Eliza Zschuschen
+| https://docs.gbif.org/collections-idea-paper/es/[Spanish], https://docs.gbif.org/collections-idea-paper/fr/[French], https://docs.gbif.org/collections-idea-paper/zh/[Simplified Chinese]
+
+| https://docs.gbif.org/2020-work-programme/en/[GBIF Work Programme 2020: Annual Update to Implementation Plan 2017–2021]
+| English
+| GBIF Secretariat
+| none
+
 | https://doi.org/10.15468/doc-6yp9-9885[GBIF Communications Strategy]
 | English
 | GBIF Secretariat
