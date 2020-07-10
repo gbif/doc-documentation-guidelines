@@ -5,7 +5,7 @@ GBIF Secretariat <communication@gbif.org>
 :numbered:
 :revnumber: {git-metadata-branch}
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
-:title-logo-image: 1265538197-Cyperus-papyrus.jpg
+:title-logo-image: img/1265538197-Cyperus-papyrus.jpg
 :license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ifdef::backend-html5[]
