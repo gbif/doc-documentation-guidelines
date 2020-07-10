@@ -147,7 +147,7 @@ The plain text files and other assets (images, data tables) that form each docum
 
 These source files are stored in a _Git repository_, which (for GBIF) is managed by a commercial service, _GitHub_.
 
-The source code for this document is stored at https://github.com/gbif/doc-documentation-guidelines/, the source code for this part of the document can be seen https://raw.githubusercontent.com/gbif/doc-documentation-guidelines/master/index.en.adoc[here].
+The source code for this document is stored at https://github.com/gbif/doc-documentation-guidelines/, the source code for this part of the document can be seen https://raw.githubusercontent.com/gbif/doc-documentation-guidelines/master/600.en.adoc[here].
 
 Contributors can edit the source code either in a web browser using the GitHub interface or on a computer (including when offline) using Git. They may also submit https://github.com/gbif/doc-documentation-guidelines/issues[issues] that comment or flag problems for others to address, including outdated information, broken links, misspellings and the like.
 
@@ -197,7 +197,7 @@ The translation system uses `.po` "_Portable Object_" files, which are commonly 
 `+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc+`
 
 . The build server will create (or update) the translation template file `translations/index.pot` with the source (English) text.  It does this every time a build runs.
-. The document should be setup on Crowdin.  [TODO – how?]  This generates a file `crowdin.yml`.
+. The document should be <<crowdin-setup,setup on Crowdin>>.  This generates a file `crowdin.yml`.
 . As translators add translations to the text, Crowdin will make a <<issues_pull_requests,pull request>> on the repository.  This should be merged.
 . The build server will then rebuild the document.
 
@@ -218,23 +218,23 @@ It is also possible to translate documents without Crowdin, using desktop tools 
 
 ==== New documents
 
-New documents should be made by:
+To make a new document:
 
-. Cloning the https://github.com/gbif/doc-template[doc-template] repository, with a name beginning with `doc-`,
-. Setting the branch name appropriately, if the document is to be versioned,
-. Adding a new job to Jenkins,
-. If required, creating a `po4a.conf` file and adding the document to Crowdin.
+. Create a new repository using the https://github.com/gbif/doc-template[doc-template] template repository (”Use this template”), with a name beginning with `doc-`.
+. Set the branch name appropriately (`1.0`), if published versions of the document should be retained
+. Add a new job to Jenkins,
+. If required, create a `po4a.conf` file and add the document to Crowdin.
 
 ===== Jenkins setup
 
 * Create a new job, based on:
-** the `doc-template` job, for unversioned documents
-** the `doc-effective-nodes-guidance` job, for versioned documents
+** the existing `doc-template` job, for unversioned documents
+** the existing `doc-effective-nodes-guidance` job, for versioned documents
 
 +
-You need to change the Git repository paths ("Source Code Management" section)
+You need to change the Git repository paths (“Source Code Management” section)
 
-* Change the `Authentication Token` to something new ("Build Triggers" section)
+* Change the `Authentication Token` to something new (“Build Triggers” section)
 
 These things should be copied across from the existing build:
 
@@ -244,7 +244,7 @@ These things should be copied across from the existing build:
 
 ===== GitHub setup
 
-* Set up a new webhook, with the path e.g. `http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX` (with the token from above)
+* Set up a new webhook, with the path e.g. `pass:[http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX]` (with the token from above)
 * The secret text seems not to matter
 * Select the individual events `Pushes` and `Releases`
 
@@ -265,18 +265,18 @@ Do this before setting up Crowdin
 [type:asciidoc] 100.en.adoc $lang:100.$lang.adoc
 [type:asciidoc] 200.en.adoc $lang:200.$lang.adoc
 …
----
+----
 + (This should be automated at some point.)
 * Push the change.  The build should generate a `translations/index.pot` file, the translation index.
 
 ===== Crowdin setup
 
-* First ensure appropriate version branches are set up, and the translation (po4a) setup.
+* First ensure appropriate version branches are set up, and the translation (po4a) set up.
 * Add the gbif-crowdin GitHub user to the project, with "Admin" rights
 * Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration (GitHub authentication will be required).
 ** Select the repository
-** Select the branch(es)
-** Change the "Service Branch Name" to `translation_*branchname*` (thus avoiding the mysterious abbreviation "i18n")
+** Select the branch
+** Change the “Service Branch Nam” to `translation_*branchname*` (thus avoiding the mysterious abbreviation "i18n")
 ** Set the Branch Configuration:
 *** Set the source to `/translations/index.pot`
 *** Set the translation to `/translations/%two_letters_code%.po`
@@ -284,6 +284,6 @@ Do this before setting up Crowdin
 
 ==== Outstanding issues
 
-. Demonstrate embedding an image, and alternative (translated) images
-. Apply a custom style to the document
+. Demonstrate embedding an image, and alternative (translated) images (https://doi.org/10.15468/doc-z79c-sa53:[doc-effective-nodes-guidance] has this)
+. Apply a custom style to the document (https://doi.org/10.15468/doc-z79c-sa53:[doc-effective-nodes-guidance] also has this)
 . Decide a release process, possibly involving assigning DOIs.
