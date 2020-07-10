@@ -9,7 +9,7 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 
 === Current and forthcoming documents
 
-[cols="3,4,1,1,1",options="header"]
+[cols="4,4,1,1,1",options="header"]
 |===
 | Title
 | Authors
