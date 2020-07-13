@@ -79,6 +79,12 @@ https://docs.gbif.org/effective-nodes-guidance/1.0/pt/[Portuguese] (update pendi
 | none
 | Review: Aug 2020
 
+| *Publishing Primary Biodiversity Data from Environmental Impact Assessments (EIAs): A guide to current best practices*
+| GBIF Secretariat & https://www.iaia.org/[IAIA: International Association for Impact Assessment] 
+| English
+| none
+| Under revision
+
 | *GBIF Documentation Guidelines* +
 (this document)
 | GBIF Secretariat
