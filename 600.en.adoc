@@ -189,7 +189,7 @@ TODO: Document the process, which is done by making a release from GitHub, but c
 
 Translated versions of these documents require some additional set-up.
 
-The translation system uses `.po` "_Portable Object_" files, which are commonly used for translating software and websites.
+The translation system uses `.po` “_Portable Object_” files, which are commonly used for translating software and websites.
 
 // TODO: change the example to point to the template, which doesn't yet have this file.
 . A file `po4a.conf` needs to exist, as in https://github.com/gbif/doc-gbif-communications-strategy/blob/1.0/po4a.conf[this example].  Each `*.en.adoc` file needs an entry in `po4a.conf`:
@@ -208,7 +208,7 @@ The translation system uses `.po` "_Portable Object_" files, which are commonly 
 It is also possible to translate documents without Crowdin, using desktop tools instead.  The translators then need to use Git/GitHub.  These additional steps are needed:
 
 . For a new language, copy the generated `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code].  For example this would be `da.po` for a Danish translation.
-. To update a translation, open the `xx.po` file in a po-file editor and choose the option to "Update from POT file" or similar.
+. To update a translation, open the `xx.po` file in a po-file editor and choose the option to “Update from POT file” or similar.
 . Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
 . Use Git/GitHub to replace the old translation file with your updated translation file.
 . Push the changes, and the build server will rebuild the document
@@ -272,11 +272,11 @@ Do this before setting up Crowdin
 ===== Crowdin setup
 
 * First ensure appropriate version branches are set up, and the translation (po4a) set up.
-* Add the gbif-crowdin GitHub user to the project, with "Admin" rights
+* Add the gbif-crowdin GitHub user to the project, with “Admin” rights
 * Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration (GitHub authentication will be required).
 ** Select the repository
 ** Select the branch
-** Change the “Service Branch Nam” to `translation_*branchname*` (thus avoiding the mysterious abbreviation "i18n")
+** Change the “Service Branch Nam” to `translation_*branchname*` (thus avoiding the mysterious abbreviation “i18n”)
 ** Set the Branch Configuration:
 *** Set the source to `/translations/index.pot`
 *** Set the translation to `/translations/%two_letters_code%.po`

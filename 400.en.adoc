@@ -1,6 +1,6 @@
-== 'Decommissioning' old documents
+== ‘Decommissioning’ old documents
 
-As a matter of practice, the Secretariat will 'decommission' and remove earlier versions of documents from GBIF through the following series of steps:
+As a matter of practice, the Secretariat will ‘decommission’ and remove earlier versions of documents from GBIF through the following series of steps:
 
 . Register a GBIF DOI via DataCite for the previous version of the document (provided that one does not already exist)
 . Produce an archival standard version (PDF/A) of the document—or documents, if translations are available
