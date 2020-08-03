@@ -125,6 +125,30 @@ NOTE: Past trends are no guarantee of future performance
 
 _https://asciidoctor.org/docs/user-manual/#admonition[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
 
+==== GBIF extensions to AsciiDoctor
+
+The document system recognizes some small additions to standard AsciiDoctor markup.
+
+===== Terms
+Terms, including Darwin Core terms, can be shown in a special style and with a link to the definition as term:dwc[decimalLatitude] or term:dwc[dwc:eventDate].
+
+----
+term:dwc[decimalLatitude] or term:dwc[dwc:eventDate]
+----
+
+===== Table cell wrapping
+
+By applying the role `break-all`, the contents of a table cell will break (wrap) at any position, rather than only between words.
+
+[cols="3"]
+|===
+h| DNA sequence example
+| [.break-all]#TCTATCCTCAATTATAGGTCATAATTCACCATCAGTAGATTTAGGAATTTTCTCTATTCATATTGCAGGTGTATCATCAATTATAGGATCAATTAATTTTATTGTAACAATTTTAAATATACATACAAAAACTCATTCATTAAACTTTTTACCATTATTTTCATGATCAGTTCTAGTTACAGCAATTCTCCTTTTATTATCATTA#
+a| The markup is `+++[.break-all]#TCTA…ATTA#]+++`
+
+Without it, the DNA sequence would stretch the table cell beyond the width of the page.
+|===
+
 === For developers
 
 NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
@@ -163,7 +187,7 @@ Some documents are published as multiple versions.  This is done using _branches
 
 The source `.adoc` files in the repository are converted into the finished HTML and PDF documents using the _AsciiDoctor_ tool.  Every time a change is made to the repository, the https://builds.gbif.org/[GBIF build server] is notified.  It retrieves the document source code, generates the document (in HTML and PDF, and in all available languages), then copies the formatted documents to a webserver.
 
-A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you may need to inspect the log file to see what the problem is.
+A log file of recent builds is kept by the build server.  If there is a syntax error preventing the document from being generated, you may need to inspect the log file to see what the problem is.  The log file also contains a list of possible spelling errors.
 
 ==== Local document build
 
