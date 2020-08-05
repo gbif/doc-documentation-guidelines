@@ -1,3 +1,4 @@
+[[panel]]
 == The Editorial Panel
 
 The Editorial Panel consists of a volunteer group of experts that, in coordination with GBIF Secretariat staff, will provide oversight, guidance and peer-review of the GBIF documentation. The EP will provide recommendations to the GBIF Secretariat on commissioning high-priority guidance from subject-matter experts, with the following responsibilities:

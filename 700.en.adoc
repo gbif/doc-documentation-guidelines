@@ -1,0 +1,75 @@
+== Information for GBIF developers
+
+NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
+
+=== New documents
+
+To make a new document:
+
+* Create a new repository using the https://github.com/gbif/doc-template[doc-template] template repository (”Use this template”), with a name beginning with `doc-`.
+* Edit the `README.adoc` to update the links, license, DOI etc.
+* Set the branch name appropriately (`1.0`), if published versions of the document should be retained
+* Add a new job to Jenkins,
+* If required, create a `po4a.conf` file and add the document to Crowdin.
+
+==== Jenkins setup
+
+* Create a new job, based on:
+** the existing `doc-template` job, for unversioned documents
+** the existing `doc-effective-nodes-guidance` job, for versioned documents
+
++
+You need to change the Git repository paths (“Source Code Management” section)
+
+* Change the `Authentication Token` to something new (“Build Triggers” section)
+* Within GitHub, set up a new webhook with the path e.g. `pass:[http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX]` (with the token from the previous step)
+** The secret text seems not to matter
+** Select the individual events `Pushes` and `Releases`
+
+.Full Jenkins configuration
+[%collapsible]
+====
+These things will have been copied across from the existing build:
+
+* A `payload` parameter to receive information from GitHub.
+* *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`.  This supports versioned documents, and updating the translation index.
+*  Set a build script, which varies depending whether the document is keeping old versions deployed.
+====
+
+[[translation-setup]]
+==== Translation setup (po4a)
+
+Do this before setting up Crowdin
+
+* Create a `po4a.conf` file, based on this template:
++
+--
+----
+# This is the translation configuration file.
+#
+# Any new file that requires translation must be added
+
+[po_directory] translations
+[options] opt:"-M utf-8 -A utf-8 -L utf-8 -k 0"
+
+[type:asciidoc] index.en.adoc $lang:index.$lang.adoc add_$lang:?translations/$lang.add
+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc
+[type:asciidoc] 200.en.adoc $lang:200.$lang.adoc
+…
+----
+(This should be automated at some point.)
+--
+* Push the change.  The build should generate a `translations/index.pot` file, the translation index.
+
+==== Crowdin setup
+
+* First ensure appropriate version branches are set up, and the translation (po4a) set up.
+* Add the gbif-crowdin GitHub user to the project, with “Admin” rights
+* Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration (GitHub authentication will be required).
+** Select the repository
+** Select the branch
+** Change the “Service Branch Name” to `translation_*branchname*` (thus avoiding the awkward abbreviation “i18n”)
+** Set the Branch Configuration:
+*** Set the source to `/translations/index.pot`
+*** Set the translation to `/translations/%two_letters_code%.po`
+* Save all this.

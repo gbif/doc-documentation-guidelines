@@ -1,6 +1,6 @@
 == Guidelines for document authors
 
-We code documents in this system using a lightweight code called https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc]. We apply http://dd.dgacm.org/editorialmanual/[United Nations editorial style conventions] and http://dd.dgacm.org/editorialmanual/ed-guidelines/style/spelling.htm/[spelling] (tl;dr: British English with -ize and -yse endings).
+We code documents in this system using a lightweight code called https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc]. We apply http://dd.dgacm.org/editorialmanual/[United Nations editorial style conventions] and http://dd.dgacm.org/editorialmanual/ed-guidelines/style/spelling.htm/[spelling] (tl;dr: British English with _–ize_ and _–yse_ endings).
 
 We use AsciiDoc because it means that:
 
@@ -16,4 +16,4 @@ We've pulled out details for a few of the more common uses of AsciiDoc markup ht
 * The https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide], which provides a ‘gentle introduction’ to the format
 * The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide], which provides a comprehensive reference on how to work with this language. 
 
-If you have questions, comments or concerns—either specifically about AsciiDoc or about the overall use and approach of this format— please email us at mailto:communication@gbif.org[communication@gbif.org].
+If you have questions, comments or concerns—either specifically about AsciiDoc or about the overall use and approach of this format—please email us at mailto:communication@gbif.org[communication@gbif.org].

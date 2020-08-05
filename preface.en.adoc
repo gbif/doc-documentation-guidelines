@@ -3,7 +3,7 @@
 
 GBIF—the Global Biodiversity Information Facility—has long produced technical documentation on a range of topics relating to biodiversity informatics and open biodiversity data with the aim of supporting a global community of practice. 
 
-With the help of the team from http://www.vertnet.org[VertNet], the GBIF Secretariat started coordinating the development of such documentation as part of its 2019 work programme, with the aim of engaging GBIF communities of practice to work with subject-matter experts commissioned to create and update under the guidance of an [editorial panel]. 
+With the help of the team from http://www.vertnet.org[VertNet], the GBIF Secretariat started coordinating the development of such documentation as part of its 2019 work programme, with the aim of engaging GBIF communities of practice to work with subject-matter experts commissioned to create and update under the guidance of an <<panel,editorial panel>>. 
 
 This goal of this approach is to provide consistent, reliable, reusable and versioned materials that can be easily updated, instilling community trust in the documentation and fostering its wider adoption and use.
 

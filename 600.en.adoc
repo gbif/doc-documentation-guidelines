@@ -149,20 +149,13 @@ a| The markup is `+++[.break-all]#TCTA…ATTA#]+++`
 Without it, the DNA sequence would stretch the table cell beyond the width of the page.
 |===
 
-=== For developers
+==== Outstanding issues
 
-NOTE: This section is technical information for GBIF software developers maintaining the system that powers these documents.
+* Demonstrate embedding an image, and alternative (translated) images (https://doi.org/10.15468/doc-z79c-sa53[doc-effective-nodes-guidance] has this)
+* Apply a custom style to the document (https://doi.org/10.15468/doc-z79c-sa53[doc-effective-nodes-guidance] also has this)
+* Document a release process, possibly involving assigning DOIs.
 
-The documents combine several small Linux tools:
-
-* Git, for source control,
-* https://asciidoctor.org/[AsciiDoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
-* https://po4a.org/[po4a], for translations,
-* https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
-* Docker, to ensure consistent builds,
-* Apache, to serve the finished documents.
-
-The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-toolkit[Docker container], with some integration in the Jenkins build job.
+=== For editors
 
 [[source_code]]
 ==== Document “source code”
@@ -181,7 +174,68 @@ NOTE: Many tutorials for using both Git and Github are available on the web.
 
 Some documents are published as multiple versions.  This is done using _branches_ in Git: the name of the branch, such as `1.0` or `2019`, is the identifier for the version.  This allows for edits to old versions, such as updating a link or correcting a syntax error in the document.
 
-// For multi-version projects, Jenkins is set to build from every branch, and deploy to a subdirectory on the webserver.
+The version (branch name) is used as part of the URL for the document, e.g. https://docs.gbif.org/effective-nodes-guidance/1.0/[https://docs.gbif.org/effective-nodes-guidance/**1.0**/].  This allows for multiple versions to be retained on the webserver.
+
+[[translation]]
+==== Translated documents
+
+The translation system uses `.po` “_Portable Object_” files, which are commonly used for translating software and websites.
+
+. A file `po4a.conf` needs to exist, as shown in <<translation-setup>>.  Each `*.en.adoc` file needs an entry in `po4a.conf`:
++
+--
+----
+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc
+----
+The build system will warn if any `*.en.adoc` files are not present in `po4a.conf`.  (This is why the `README.adoc` and `LICENSE.adoc` files, not part of the document, do not include `.en` in their filenames.)
+--
+
+* Whenever the document text is changed, the build server will update the translation template file `translations/index.pot` with the source (English) text.
+* Crowdin will detect the change to `translations/index.pot` and notify translators.
+* As translators add translations to the text, Crowdin will make a pull request on the repository.  This should be merged.
+* The build server will then rebuild the document with the translated text.
+
+.Alternatives to Crowdin
+[%collapsible]
+====
+It is also possible to translate documents without Crowdin, using desktop tools instead.  The translators then need to use Git/GitHub.  These additional steps are needed:
+
+. For a new language, copy the generated `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code].  For example this would be `da.po` for a Danish translation.
+. To update a translation, open the `xx.po` file in a po-file editor and choose the option to “Update from POT file” or similar.
+. Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
+. Use Git/GitHub to replace the old translation file with your updated translation file.
+. Push the changes, and the build server will rebuild the document
+
+*It is not recommended to use both methods on the same document.  If translations conflict they would not be lost, but the resulting mess can be confusing to sort out using Git.*
+====
+
+==== Publishing a document
+
+Here, publishing a document means building the document for `*docs.gbif.org*`, rather than the test system `*docs.gbif-uat.org*`.
+
+To publish a document, go to the GitHub repository in a web browser.
+
+1. If required, review and merge any translation pull requests.
+2. Check the most recent output from the document build in Jenkins.  This is easily accessed using the "Build Status" button on the repository.  Check for
+  * Incorrect spelling
+  * Warnings about broken crossreferences
+  * Warnings about incomplete translation
+3. Review the document on https://docs.gbif-uat.org/, including the PDF.
+4. Use the GitHub interface to make a _release_.
+
+=== The documentation system software
+
+The documents combine several small Linux tools:
+
+* Git, for source control,
+* https://asciidoctor.org/[AsciiDoctor], chosen with essentially the same reasoning as https://github.com/KiCad/kicad-doc/blob/5.1.0/doc_alternatives/README.adoc[the KiCad documentation authors] (and following their approach to translation),
+* http://aspell.net/[GNU Aspell], for spell checking,
+* https://po4a.org/[po4a], for translations,
+* https://builds.gbif.org/[GBIF's Jenkins server], for document compilation,
+* Docker, to ensure consistent builds,
+* Apache, to serve the finished documents.
+
+The result is mostly contained in a https://github.com/gbif/gbif-asciidoctor-toolkit[Docker container], with some integration in the Jenkins build job.
 
 ==== Generating the document
 
@@ -193,121 +247,9 @@ A log file of recent builds is kept by the build server.  If there is a syntax e
 
 If you are familiar with software development tools you can build a document on your own computer — this is useful for previewing changes.  You will first need to setup https://www.docker.com/[Docker].  Then, open a terminal window and navigate using the `cd` command to the top-level directory of your document — for this document, it would be `doc-documentation-guidelines`.  You can then build the HTML document with this command:
 
-`+docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidoctor-toolkit+`
+[source,shell]
+----
+docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidoctor-toolkit
+----
 
 Assuming all is well, the resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.  The output from the command should provide clues if there are problems.
-
-[[issues_pull_requests]]
-==== Handling issues and pull requests
-
-*_This section has not been written._*
-
-==== Publishing a document
-
-Here, publishing a document means building the document for `*docs.gbif.org*`, rather than the test system `*docs.gbif-uat.org*`.
-
-TODO: Document the process, which is done by making a release from GitHub, but currently needs some care to ensure the build system (Jenkins) is configured correctly.
-
-[[translation]]
-==== Technical guidelines for translated documents
-
-Translated versions of these documents require some additional set-up.
-
-The translation system uses `.po` “_Portable Object_” files, which are commonly used for translating software and websites.
-
-// TODO: change the example to point to the template, which doesn't yet have this file.
-. A file `po4a.conf` needs to exist, as in https://github.com/gbif/doc-gbif-communications-strategy/blob/1.0/po4a.conf[this example].  Each `*.en.adoc` file needs an entry in `po4a.conf`:
-+
-`+[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc+`
-
-. The build server will create (or update) the translation template file `translations/index.pot` with the source (English) text.  It does this every time a build runs.
-. The document should be <<crowdin-setup,setup on Crowdin>>.  This generates a file `crowdin.yml`.
-. As translators add translations to the text, Crowdin will make a <<issues_pull_requests,pull request>> on the repository.  This should be merged.
-. The build server will then rebuild the document.
-
-
-[sidebar]
-.Alternatives to Crowdin
---
-It is also possible to translate documents without Crowdin, using desktop tools instead.  The translators then need to use Git/GitHub.  These additional steps are needed:
-
-. For a new language, copy the generated `index.pot` (_Portable Object Template_) file to the new file `xx.po`, where `xx` is the https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[language code].  For example this would be `da.po` for a Danish translation.
-. To update a translation, open the `xx.po` file in a po-file editor and choose the option to “Update from POT file” or similar.
-. Use a po-file editor to make the translations.  Examples are https://poedit.net/[Poedit] (software) or https://localise.biz/free/poeditor[poeditor] (website).
-. Use Git/GitHub to replace the old translation file with your updated translation file.
-. Push the changes, and the build server will rebuild the document
-
-*It is not recommended to use both methods on the same document.  If translations conflict they would not be lost, but the resulting mess can be confusing to sort out using Git.*
---
-
-==== New documents
-
-To make a new document:
-
-. Create a new repository using the https://github.com/gbif/doc-template[doc-template] template repository (”Use this template”), with a name beginning with `doc-`.
-. Set the branch name appropriately (`1.0`), if published versions of the document should be retained
-. Add a new job to Jenkins,
-. If required, create a `po4a.conf` file and add the document to Crowdin.
-
-===== Jenkins setup
-
-* Create a new job, based on:
-** the existing `doc-template` job, for unversioned documents
-** the existing `doc-effective-nodes-guidance` job, for versioned documents
-
-+
-You need to change the Git repository paths (“Source Code Management” section)
-
-* Change the `Authentication Token` to something new (“Build Triggers” section)
-
-These things should be copied across from the existing build:
-
-* A `payload` parameter to receive information from GitHub.
-* *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`.  This supports versioned documents, and updating the translation index.
-*  Set a build script, which varies depending whether the document is keeping old versions deployed.
-
-===== GitHub setup
-
-* Set up a new webhook, with the path e.g. `pass:[http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX]` (with the token from above)
-* The secret text seems not to matter
-* Select the individual events `Pushes` and `Releases`
-
-===== Translation setup (po4a)
-
-Do this before setting up Crowdin
-
-* Create a `po4a.conf` file, based on this template:
-----
-# This is the translation configuration file.
-#
-# Any new file that requires translation must be added
-
-[po_directory] translations
-[options] opt:"-M utf-8 -A utf-8 -L utf-8 -k 0"
-
-[type:asciidoc] index.en.adoc $lang:index.$lang.adoc add_$lang:?translations/$lang.add
-[type:asciidoc] 100.en.adoc $lang:100.$lang.adoc
-[type:asciidoc] 200.en.adoc $lang:200.$lang.adoc
-…
-----
-+ (This should be automated at some point.)
-* Push the change.  The build should generate a `translations/index.pot` file, the translation index.
-
-===== Crowdin setup
-
-* First ensure appropriate version branches are set up, and the translation (po4a) set up.
-* Add the gbif-crowdin GitHub user to the project, with “Admin” rights
-* Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration (GitHub authentication will be required).
-** Select the repository
-** Select the branch
-** Change the “Service Branch Nam” to `translation_*branchname*` (thus avoiding the mysterious abbreviation “i18n”)
-** Set the Branch Configuration:
-*** Set the source to `/translations/index.pot`
-*** Set the translation to `/translations/%two_letters_code%.po`
-* Save all this.
-
-==== Outstanding issues
-
-. Demonstrate embedding an image, and alternative (translated) images (https://doi.org/10.15468/doc-z79c-sa53:[doc-effective-nodes-guidance] has this)
-. Apply a custom style to the document (https://doi.org/10.15468/doc-z79c-sa53:[doc-effective-nodes-guidance] also has this)
-. Decide a release process, possibly involving assigning DOIs.
