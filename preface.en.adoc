@@ -21,13 +21,13 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 | https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
 | https://doi.org/10.15468/doc-gzjg-af18[Spanish]
 | none
-| Review
+| Public review complete
 
 | *Current Best Practices for Generalizing Sensitive Species Occurrence Data*
 | https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman]
 | https://doi.org/10.15468/doc-5jp4-5g10[English]
 | none
-| Review
+| Public review complete
 
 
 | *Publishing sequence-derived data through biodiversity discovery platforms*
@@ -84,7 +84,13 @@ https://docs.gbif.org/effective-nodes-guidance/1.0/pt/[Portuguese] (update pendi
 | GBIF Secretariat & https://www.iaia.org/[IAIA: International Association for Impact Assessment] 
 | English
 | none
-| Under revision
+| Under revision/review
+
+| *Guidance for private companies to become data publishers through GBIF*
+| https://orcid.org/0000-0002-8351-4028[Rui Figueira], https://orcid.org/0000-0001-8164-0760[Pedro Beja], https://orcid.org/0000-0001-9244-399X[Cristina Villaverde], Miguel Vega, https://orcid.org/0000-0003-3077-6136[Katia Cezón], https://orcid.org/0000-0002-2629-222X[Tainan Messina], https://orcid.org/0000-0001-6902-1465[Anne-Sophie Archambeau], https://orcid.org/0000-0002-2857-2276[Rukaya Johaadien], https://orcid.org/0000-0002-2352-5497[Dag Endresen] & https://orcid.org/0000-0001-8327-8670[Dairo Escobar]
+| English
+| Spanish, French and Portuguese
+| In preparation
 
 | *GBIF Documentation Guidelines* +
 (this document)
