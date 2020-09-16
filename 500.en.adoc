@@ -1,15 +1,15 @@
 [[panel]]
 == Documentation Steering Panel
 
-The Steering Panel consists of a volunteer group of experts that, in coordination with GBIF Secretariat staff, will provide oversight and guidance for the selection and community-review of GBIF documentation.
+The Steering Panel consists of a volunteer group of experts that, in coordination with GBIF Secretariat staff, provides oversight and guidance for the selection and community-review of GBIF documentation.
 
 === Structure and Operations
  
-The panel will consist of 8-10 members comprised of individuals from GBIF regions and the Secretariat staff. The panel will meet no more than quarterly each year to discuss existing documentation and to provide recommendations to the GBIF Secretariat on commissioning high-priority guidance from subject-matter experts. 
+The panel consists of 8-10 members comprised of individuals from GBIF regions and the Secretariat staff. The panel meets (no more than quarterly) to discuss existing documentation and to provide recommendations to the GBIF Secretariat on commissioning high-priority guidance from subject-matter experts. 
 
 === Responsibilities
 
-. assist with setting annual priorities for documentation needs and make recommendations for calls for documentation as and when appropriate.
-. consult widely with other experts, institutions, initiatives and projects within the biodiversity informatics community at-large when considering updates to and for new documentation.
-. review and make recommendations regarding the documentation system for future sustainability.
-. participate in the vetting process to ensure that commissioned documentation is of high quality and serves the intended audiences.
+. Assist with setting annual priorities for documentation needs and make recommendations for calls for documentation as and when appropriate.
+. Consult widely with other experts, institutions, initiatives and projects within the biodiversity informatics community at-large when considering updates to and for new documentation.
+. Review and make recommendations regarding the documentation system for future sustainability.
+. Participate in the vetting process to ensure that commissioned documentation is of high quality and serves the intended audiences.
