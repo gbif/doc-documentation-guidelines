@@ -1,6 +1,6 @@
 https://docs.gbif.org/documentation-guidelines/[image:gbif-document-shield.svg[GBIF Document]]
 https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg[CC BY-SA 4.0]]
-https://builds.gbif.org/job/doc-documentation-guidelines/[image:https://builds.gbif.org/job/doc-documentation-guidelines/badge/icon[Build status]]
+https://builds.gbif.org/job/doc-documentation-guidelines/lastBuild/console[image:https://builds.gbif.org/job/doc-documentation-guidelines/badge/icon[Build status]]
 
 = GBIF Documentation Guidelines
 
