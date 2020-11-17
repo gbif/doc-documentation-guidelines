@@ -21,7 +21,7 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 | https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman]
 | https://doi.org/10.15468/doc-5jp4-5g10[English]
 | none
-| Published 16/11/20
+| Published
 
 | *Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad*
 | https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
