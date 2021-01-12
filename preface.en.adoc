@@ -23,6 +23,36 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 | none
 | Published
 
+| *Georeferencing Best Practices*
+| https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
+| https://doi.org/10.15468/doc-gg7h-s853[English]
+| none
+| Published
+
+| *Georeferencing Quick Reference Guide*
+| https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Maria Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A Bloom]
+| https://doi.org/10.35035/e09p-h128[English]
+| none
+| Published
+
+| *Georeferencing Calculator Manual*
+| https://orcid.org/0000-0003-1273-1807[David A. Bloom], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek] & https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] 
+| https://doi.org/10.35035/gdwq-3v93[English]
+| none
+| Published
+
+| *Publishing Primary Biodiversity Data from Environmental Impact Assessments (EIAs): A guide to current best practices*
+| GBIF Secretariat & https://www.iaia.org/[IAIA: International Association for Impact Assessment] 
+| https://doi.org/10.35035/doc-5xdm-8762n[English]
+| none
+| Published
+
+| *Guidance for private companies to become data publishers through GBIF*
+| https://orcid.org/0000-0002-8351-4028[Rui Figueira], https://orcid.org/0000-0001-8164-0760[Pedro Beja], https://orcid.org/0000-0001-9244-399X[Cristina Villaverde], Miguel Vega, https://orcid.org/0000-0003-3077-6136[Katia Cezón], https://orcid.org/0000-0002-2629-222X[Tainan Messina], https://orcid.org/0000-0001-6902-1465[Anne-Sophie Archambeau], https://orcid.org/0000-0002-2857-2276[Rukaya Johaadien], https://orcid.org/0000-0002-2352-5497[Dag Endresen] & https://orcid.org/0000-0001-8327-8670[Dairo Escobar]
+| https://doi.org/10.35035/doc-b8hq-me03[English]
+| https://docs.gbif-uat.org/private-sector-data-publishing/2.0/es/[Spanish], https://docs.gbif-uat.org/private-sector-data-publishing/2.0/fr/[French] and https://docs.gbif-uat.org/private-sector-data-publishing/2.0/pt/[Portuguese]
+| Published
+
 | *Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad*
 | https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
 | https://doi.org/10.15468/doc-gzjg-af18[Spanish]
@@ -34,36 +64,6 @@ This goal of this approach is to provide consistent, reliable, reusable and vers
 | https://doi.org/10.35035/doc-vf1a-nr22[English]
 | none
 | Public review completed: under revision
-
-| *Georeferencing Best Practices*
-| https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek]
-| https://doi.org/10.15468/doc-gg7h-s853[English]
-| none
-| Community review completed
-
-| *Georeferencing Quick Reference Guide*
-| https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Maria Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A Bloom]
-| https://doi.org/10.35035/e09p-h128[English]
-| none
-| Community review completed
-
-| *Georeferencing Calculator Manual*
-| https://orcid.org/0000-0003-1273-1807[David A. Bloom], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek] & https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio] 
-| https://doi.org/10.35035/gdwq-3v93[English]
-| none
-| Community review completed
-
-| *Publishing Primary Biodiversity Data from Environmental Impact Assessments (EIAs): A guide to current best practices*
-| GBIF Secretariat & https://www.iaia.org/[IAIA: International Association for Impact Assessment] 
-| https://doi.org/10.35035/doc-5xdm-8762n[English]
-| none
-| Community review
-
-| *Guidance for private companies to become data publishers through GBIF*
-| https://orcid.org/0000-0002-8351-4028[Rui Figueira], https://orcid.org/0000-0001-8164-0760[Pedro Beja], https://orcid.org/0000-0001-9244-399X[Cristina Villaverde], Miguel Vega, https://orcid.org/0000-0003-3077-6136[Katia Cezón], https://orcid.org/0000-0002-2629-222X[Tainan Messina], https://orcid.org/0000-0001-6902-1465[Anne-Sophie Archambeau], https://orcid.org/0000-0002-2857-2276[Rukaya Johaadien], https://orcid.org/0000-0002-2352-5497[Dag Endresen] & https://orcid.org/0000-0001-8327-8670[Dairo Escobar]
-| https://doi.org/10.35035/doc-b8hq-me03[English]
-| https://docs.gbif-uat.org/private-sector-data-publishing/2.0/es/[Spanish], https://docs.gbif-uat.org/private-sector-data-publishing/2.0/fr/[French] and https://docs.gbif-uat.org/private-sector-data-publishing/2.0/pt/[Portuguese]
-| In preparation
 
 | *Establishing an Effective GBIF Participant Node: Concepts and general considerations*
 | GBIF Secretariat
