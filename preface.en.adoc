@@ -13,45 +13,68 @@ https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman^] (2020) *Current Best P
 
 * Translation (status): https://crowdin.com/project/sensitive-species-guide/invite?d=q685i40575g583g5m4o4r4c3b3l4[French (ongoing)^], https://crowdin.com/project/sensitive-species-guide/invite?d=q685i40575g593g5m4o4r4c3b3l4[Spanish (ongoing)^]
 
+===
+
 https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman^] & https://orcid.org/0000-0003-1144-0290[John R. Wieczorek^] (2020) *Georeferencing Best Practices*. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853
 
 * Translation (status): https://crowdin.com/project/georeferencing-best-practices/invite?d=m68536u4p6k5o4e5q463r4c3l433[Spanish (ongoing)^]
+
+===
 
 https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio^], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman^], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek^], https://orcid.org/0000-0002-6392-8864[Maria Celeste Luna^] & https://orcid.org/0000-0003-1273-1807[David A. Bloom^] (2020) *Georeferencing Quick Reference Guide*. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128
 
 * Translation (status): https://crowdin.com/project/georeferencing-quick-reference/invite?d=55752665a5t6n4v6b363e3q4n4o4[Spanish (ongoing)^]
 
+===
+
 https://orcid.org/0000-0003-1273-1807[David A. Bloom^], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek^] & https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio^] (2020) *Georeferencing Calculator Manual*. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/gdwq-3v93
 
 * Translation (status): https://crowdin.com/project/georef-calculator-manu/invite?d=85k6j40595j5b3h5q4p4g3c3a3j4[Spanish (ongoing)^]
+
+===
 
 https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio^], https://orcid.org/0000-0002-1632-9818[Camila A. Plata Corredor^], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek^], https://orcid.org/0000-0003-1070-1081[Ricardo Ortiz Gallego^] & https://orcid.org/0000-0002-0459-4024[Leonardo Buitrago^] (2021) *Guía para la limpieza de datos sobre biodiversidad con OpenRefine*. Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18.
 
 * Translation (status): https://crowdin.com/project/openrefine-guide/invite?d=q64576056507p4d3l5p4d343a3m4c3[English (ongoing)^], https://crowdin.com/project/openrefine-guide/invite?d=q64576056507m4h5d3p4c343a3r4[French (ongoing)^]
 
+===
+
 GBIF Secretariat & https://www.iaia.org/[IAIA: International Association for Impact Assessment^] (2020) *Best Practices for Publishing Biodiversity Data from Environmental Impact Assessments*. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-5xdm-8762
 
 * Translation (status): https://crowdin.com/project/eia-guide/invite?d=o6l6q45535f593h5c3o4v4m4e3j4[French (ongoing)^], https://crowdin.com/project/eia-guide/invite?d=o6l6q45535f5a3h5c3o4v4m4e3j4[Spanish (ongoing)^]
 
-Figueira R, Beja P, Villaverde C, Vega M, Cezón K, Messina T, Archambeau A, Johaadien R, Endresen D & Escobar D (2020) Guidance for private companies to become data publishers through GBIF: Template document to support the internal authorization process to become a GBIF publisher. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-b8hq-me03
+===
 
 https://orcid.org/0000-0002-8351-4028[Rui Figueira^], https://orcid.org/0000-0001-8164-0760[Pedro Beja^], https://orcid.org/0000-0001-9244-399X[Cristina Villaverde^], https://orcid.org/0000-0003-1885-7195[Miguel Vega^], https://orcid.org/0000-0003-3077-6136[Katia Cezón^], https://orcid.org/0000-0002-2629-222X[Tainan Messina^], https://orcid.org/0000-0001-6902-1465[Anne-Sophie Archambeau^], https://orcid.org/0000-0002-2857-2276[Rukaya Johaadien^], https://orcid.org/0000-0002-2352-5497[Dag Endresen^] & https://orcid.org/0000-0001-8327-8670[Dairo Escobar^]
+ (2020) Guidance for private companies to become data publishers through GBIF: Template document to support the internal authorization process to become a GBIF publisher. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-b8hq-me03
 
 * Translation (status): https://docs.gbif-uat.org/private-sector-data-publishing/2.0/es/[Spanish (complete)^], https://docs.gbif-uat.org/private-sector-data-publishing/2.0/fr/[French (complete)^] and https://docs.gbif-uat.org/private-sector-data-publishing/2.0/pt/[Portuguese (complete)^]
 
+===
+
 https://orcid.org/0000-0002-3627-6899[Anders F. Andersson^], https://orcid.org/0000-0001-7396-1484[Andrew Bissett^], https://orcid.org/0000-0003-4529-6266[Anders G. Finstad^], https://orcid.org/0000-0002-7535-9574[Frode Fossøy^], https://orcid.org/0000-0002-2685-8078[Marie Grosjean^], https://orcid.org/0000-0002-4827-3310[Michael Hope^], https://orcid.org/0000-0003-1691-239X[Thomas S. Jeppesen^], https://orcid.org/0000-0002-5171-1668[Urmas Kõljalg^], https://orcid.org/0000-0002-8779-6464[Daniel Lundin^], https://orcid.org/0000-0002-8052-0107[R. Henrik Nilsson^], https://orcid.org/0000-0003-4897-8422[Maria Prager^], https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen^] & https://orcid.org/0000-0002-2919-1168[Dmitry Schigel^] (2020) *Publishing DNA-derived data through biodiversity data platforms* [Community review draft]. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-vf1a-nr22.
+
+===
 
 GBIF Secretariat (2019) *Establishing an Effective GBIF Participant Node: Concepts and general considerations*. Copenhagen. https://doi.org/10.15468/doc-z79c-sa53.
 
 * Translation (status): https://crowdin.com/project/gbif-nodes-guidance/invite?d=5565i475a507c327a3m4s4l473q4[Spanish (update needed)^], https://crowdin.com/project/gbif-nodes-guidance/invite?d=5565i475a507b327a3m4s4l473q4[French (update needed)^] and https://crowdin.com/project/gbif-nodes-guidance/invite?d=5565i475a507d3m4j5k4o4r4a3l4d3[Portuguese (update needed)^]
 
+===
+
 https://orcid.org/0000-0001-6492-4016[Donald Hobern^], https://orcid.org/0000-0003-0116-3445[Alex Asase^], https://orcid.org/0000-0002-0596-5376[Quentin Groom^], Maofang Luo, https://orcid.org/0000-0003-2639-7520[Deborah Paul^], https://orcid.org/0000-0001-6215-3617[Tim Robertson^], https://orcid.org/0000-0002-4048-7728[Patrick Semal^], https://orcid.org/0000-0002-8613-7133[Barbara Thiers^], https://orcid.org/0000-0001-6496-1423[Matt Woodburn^] & Eliza Zschuschen (2020) *Advancing the Catalogue of the World’s Natural History Collections*. v2.0. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/p93g-te47.
 
 * Translation (status): https://docs.gbif.org/collections-idea-paper/es/[Spanish (completed)^], https://docs.gbif.org/collections-idea-paper/fr/[French (completed)^], https://docs.gbif.org/collections-idea-paper/zh/[Simplified Chinese (completed)^]
 
+===
+
 GBIF Secretariat (2020) *GBIF Work Programme 2021: Annual Update to Implementation Plan 2017–2021*. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-bpdx-ae08
 
+===
+
 GBIF Secretariat (2019) *GBIF Work Programme 2020: Annual Update to Implementation Plan 2017–2021*. Copenhagen: GBIF Secretariat. https://docs.gbif.org/2020-work-programme/en/
+
+===
 
 GBIF Secretariat (2015) *GBIF Communications Strategy*. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-6yp9-9885
 
