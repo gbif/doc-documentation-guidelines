@@ -28,4 +28,4 @@ Updated July 2020
 === Cover image
 
 // Caption. Credit, source, licence.
-Egyptian paperplant (_Cyperus papyrus_)], Chapultepec, Mexico City. Photo 2016 Alfonso Gutiérrez Aldana via https://www.gbif.org/occurrence/1265538197[iNaturalist Research-grade Observations] licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+Egyptian paperplant (_Cyperus papyrus_), Chapultepec, Mexico City. Photo 2016 Alfonso Gutiérrez Aldana via https://www.gbif.org/occurrence/1265538197[iNaturalist Research-grade Observations] licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
