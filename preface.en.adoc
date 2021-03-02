@@ -78,4 +78,4 @@ GBIF Secretariat (2019) *GBIF Work Programme 2020: Annual Update to Implementati
 
 GBIF Secretariat (2015) *GBIF Communications Strategy*. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-6yp9-9885
 
-* Translation (status): https://docs.gbif-uat.org/gbif-communications-strategy/1.0/pt/[Portuguese]
+* Translation (status): https://docs.gbif-uat.org/gbif-communications-strategy/1.0/pt/[Portuguese (completed)^]
