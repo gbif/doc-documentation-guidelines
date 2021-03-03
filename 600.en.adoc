@@ -3,12 +3,12 @@
 
 === For authors
 
-NOTE: This section provides some basic technical orientation for authors commissioned to write documents. Both the https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide] and https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides much more detailed and comprehensive references for how to work with this lightweight markup format. 
+NOTE: This section provides some basic technical orientation for authors commissioned to write documents. Both the https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide] and https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoctor User Guide] provides much more detailed and comprehensive references for how to work with this lightweight markup format. 
 
 [structure]
 ==== Structuring the document
 
-All documents whose primary language is English start from the file `index.en.adoc`.  Using the https://asciidoctor.org/docs/user-manual/#include-directive[`include` directive] allows a single document to be spread across multiple files.  This makes editing (especially collaborative editing) easier, helps translators, and simplifies reordering sections of a document.  
+All documents whose primary language is English start from the file `index.en.adoc`.  Using the https://docs.asciidoctor.org/asciidoc/latest/directives/include/[`include` directive] allows a single document to be spread across multiple files.  This makes editing (especially collaborative editing) easier, helps translators, and simplifies reordering sections of a document.  
 
 Except for the primary file being called `index.en.adoc`, there are no hard restrictions on how a document must be structured.  It is probably easiest for editors to structure documents with number-prefixed filenames, preferably with large intervals to allow new sections to be inserted.
 
@@ -32,7 +32,7 @@ AsciiDoctor is a text document format for writing (among other things) books, eb
 .AsciiDoctor User Guide
 [TIP]
 ====
-The https://asciidoctor.org/docs/user-manual/[AsciiDoctor User Guide] provides an excellent reference to what's possible with AsciiDoctor.
+The https://docs.asciidoctor.org/asciidoctor/latest/[AsciiDoctor User Guide] provides an excellent reference to what's possible with AsciiDoctor.
 ====
 
 Here are the most common parts of AsciiDoctor markup:
@@ -72,7 +72,7 @@ Within a chapter, the first and highest heading level uses three equals signs:
 
 Lower-level headings continue with additional `=` signs.
 
-_https://asciidoctor.org/docs/user-manual/#sections[Continue reading about section headings in the AsciiDoctor User Guide]._
+_https://docs.asciidoctor.org/asciidoc/latest/sections/titles-and-levels/[Continue reading about section headings in the AsciiDoctor User Guide]._
 
 [inline]
 ===== Inline Markup
@@ -94,7 +94,7 @@ The markup looks like this:
 Visit https://www.gbif.org/[GBIF.org].
 ----
 
-_https://asciidoctor.org/docs/user-manual/#text-formatting[Continue reading about text formatting in the AsciiDoctor User Guide]._
+_https://docs.asciidoctor.org/asciidoc/latest/text/[Continue reading about text formatting in the AsciiDoctor User Guide]._
 
 [admonitions]
 ==== Admonitions
@@ -123,7 +123,7 @@ There is also a short form, which is appropriate for a single sentence:
 NOTE: Past trends are no guarantee of future performance
 ----
 
-_https://asciidoctor.org/docs/user-manual/#admonition[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
+_https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
 
 ==== GBIF extensions to AsciiDoctor
 
@@ -253,3 +253,5 @@ docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidocto
 ----
 
 Assuming all is well, the resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.  The output from the command should provide clues if there are problems.
+
+You can also add `continuous` to the end of this command.  This will rebuild the document every time it is changed.
