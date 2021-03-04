@@ -6,7 +6,7 @@ NOTE: This section is technical information for GBIF software developers maintai
 
 To make a new document:
 
-* Create a new repository using the https://github.com/gbif/doc-template[doc-template] template repository (”Use this template”), with a name beginning with `doc-`.
+* Create a new repository using the https://github.com/gbif/doc-template[doc-template] template repository (”Use this template”), with a name beginning with `doc-`, or `course-` for a training course.
 * Edit the `README.adoc` to update the links, license, DOI etc.
 * Set the branch name appropriately (`1.0`), if published versions of the document should be retained
 * Add a new job to Jenkins,
@@ -16,14 +16,18 @@ To make a new document:
 
 * Create a new job, based on:
 ** the existing `doc-template` job, for unversioned documents
-** the existing `doc-effective-nodes-guidance` job, for versioned documents
+** the existing `doc-test-document` job, for versioned documents
 
 +
 You need to change the Git repository paths (“Source Code Management” section)
 
 * Change the `Authentication Token` to something new (“Build Triggers” section)
-* Within GitHub, set up a new webhook with the path e.g. `pass:[http://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX]` (with the token from the previous step)
-** The secret text seems not to matter
+* Within GitHub, set up a new webhook with the path:
++
+----
+https://builds.gbif.org/job/doc-XXXXXXXXXXXX/buildWithParameters?token=XXXXXXXXXX
+----
+** The secret text does not matter
 ** Select the individual events `Pushes` and `Releases`
 
 .Full Jenkins configuration
@@ -31,9 +35,14 @@ You need to change the Git repository paths (“Source Code Management” sectio
 ====
 These things will have been copied across from the existing build:
 
+* Discard old builds: 15
+* GitHub project
 * A `payload` parameter to receive information from GitHub.
 * *Source Code Management*: Under advanced Git settings, set the branches to build to `origin/*` and `Check out to specific local branch` to `+**+`.  This supports versioned documents, and updating the translation index.
-*  Set a build script, which varies depending whether the document is keeping old versions deployed.
+*  A build script, either `VERSIONED=true /usr/local/bin/document-build-deploy` or just `/usr/local/bin/document-build-deploy`.
+* Git Publisher post-build action: to merge changes to the translation index.
+* Set GitHub commit status (so users can see if they have committed invalid syntax).
+
 ====
 
 [[translation-setup]]
