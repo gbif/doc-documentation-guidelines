@@ -21,7 +21,7 @@ The panel consists of 8-10 members comprised of individuals from GBIF regions an
 * Pierre Radji (Africa)
 * Maofang Luo (Asia)
 * Paula Zermoglio (Latin American and the Caribbean)
-* Chantel Hjubers (Oceania)
+* Chantal Huijbers (Oceania)
 * Andrea Hahn (GBIF Secretariat)
 * Dmitry Schigel (GBIF Secretariat)
 
