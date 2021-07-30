@@ -16,16 +16,16 @@ The panel consists of 8-10 members comprised of individuals from GBIF regions an
 
 === Panel members
 
-* Sharon Grant, chair (North America)
-* Patricia Mergen, vice-chair (Europe and Central Asia)
-* Pierre Radji (Africa)
-* Maofang Luo (Asia)
-* Paula Zermoglio (Latin American and the Caribbean)
-* Chantal Huijbers (Oceania)
-* Andrea Hahn (GBIF Secretariat)
-* Dmitry Schigel (GBIF Secretariat)
+* **Chair**: Sharon Grant, https://www.gbif.org/the-gbif-network/north-america[North America^]
+* **Vice-chair**: Patricia Mergen, https://www.gbif.org/the-gbif-network/europe[Europe and Central Asia^]
+* Pierre Radji, https://www.gbif.org/the-gbif-network/africa[Africa^]
+* Maofang Luo, https://www.gbif.org/the-gbif-network/asia[Asia^]
+* Paula Zermoglio, https://www.gbif.org/the-gbif-network/latin-america[Latin American and the Caribbean^]
+* Chantal Huijbers, https://www.gbif.org/the-gbif-network/oceania[Oceania^]
+* Andrea Hahn, GBIF Secretariat
+* Dmitry Schigel, GBIF Secretariat
 
-=== GBIF Secretariat panel liasons
+_GBIF Secretariat staff liaisons_
 
 * Kyle Copas
 * Laura Anne Russell
