@@ -4,4 +4,4 @@ The GBIF network hosts https://www.gbif.org/translators[a vibrant community of v
 
 We support translations based on the expressed needs and interests of our language communities. As such, we welcome efforts to extend usefulness and reach of our documentation through translation. If you wish to volunteer or to voice your support for making specific titles available in translation, please email us at mailto:communication@gbif.org[communication@gbif.org]. We will do what we can gauge interest from others in the community and provide coordination support.
 
-If you're interested in the details of how our documentation system implements translations, see the https://#[relevant section in the technical guidance] below.
+If you're interested in the details of how our documentation system implements translations, see the <<translation-setup,relevant section in the technical guidance>> below.
