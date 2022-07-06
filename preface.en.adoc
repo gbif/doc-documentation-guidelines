@@ -65,7 +65,7 @@ GBIF Secretariat (2019) *Establishing an Effective GBIF Participant Node: Concep
 
 https://orcid.org/0000-0001-6492-4016[Donald Hobern^], https://orcid.org/0000-0003-0116-3445[Alex Asase^], https://orcid.org/0000-0002-0596-5376[Quentin Groom^], Maofang Luo, https://orcid.org/0000-0003-2639-7520[Deborah Paul^], https://orcid.org/0000-0001-6215-3617[Tim Robertson^], https://orcid.org/0000-0002-4048-7728[Patrick Semal^], https://orcid.org/0000-0002-8613-7133[Barbara Thiers^], https://orcid.org/0000-0001-6496-1423[Matt Woodburn^] & Eliza Zschuschen (2020) *Advancing the Catalogue of the World’s Natural History Collections*. v2.0. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/p93g-te47.
 
-* Translation (status): https://docs.gbif.org/collections-idea-paper/es/[Spanish^] (completed), https://docs.gbif.org/collections-idea-paper/fr/[French^] (completed), https://docs.gbif.org/collections-idea-paper/zh/[Simplified Chinese^] (completed)
+* Translation (status): https://docs.gbif.org/collections-idea-paper/es/[Spanish^] (complete), https://docs.gbif.org/collections-idea-paper/fr/[French^] (complete), https://docs.gbif.org/collections-idea-paper/zh/[Simplified Chinese^] (complete)
 
 '''
 
@@ -79,4 +79,4 @@ GBIF Secretariat (2019) *GBIF Work Programme 2020: Annual Update to Implementati
 
 GBIF Secretariat (2015) *GBIF Communications Strategy*. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-6yp9-9885
 
-* Translation (status): https://docs.gbif-uat.org/gbif-communications-strategy/1.0/pt/[Portuguese^] (completed)
+* Translation (status): https://docs.gbif-uat.org/gbif-communications-strategy/1.0/pt/[Portuguese^] (complete)
