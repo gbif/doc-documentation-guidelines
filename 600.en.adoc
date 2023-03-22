@@ -249,7 +249,7 @@ If you are familiar with software development tools you can build a document on 
 
 [source,shell]
 ----
-docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ gbif/asciidoctor-toolkit
+docker run --rm -it --user $(id -u):$(id -g) -v $PWD:/documents/ docker.gbif.org/asciidoctor-toolkit
 ----
 
 Assuming all is well, the resulting documents are in subdirectories coded by language (such as `en`), including both HTML and PDF files.  The output from the command should provide clues if there are problems.
