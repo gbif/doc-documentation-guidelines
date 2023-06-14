@@ -1,6 +1,6 @@
 == Guidelines for document authors
 
-We code documents in this system using a lightweight code called https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc]. We apply http://dd.dgacm.org/editorialmanual/[United Nations editorial style conventions] and http://dd.dgacm.org/editorialmanual/ed-guidelines/style/spelling.htm/[spelling] (tl;dr: British English with _–ize_ and _–yse_ endings).
+We code documents in this system using a lightweight code called https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc]. We apply https://www.un.org/dgacm/en/content/editorial-manual[United Nations editorial style conventions] and https://www.un.org/dgacm/en/content/editorial-manual/spelling[spelling] (tl;dr: British English with _–ize_ and _–yse_ endings).
 
 We use AsciiDoc because it means that:
 
