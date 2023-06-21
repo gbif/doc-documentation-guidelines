@@ -74,10 +74,12 @@ Do this before setting up Crowdin
 
 * First ensure appropriate version branches are set up, and the translation (po4a) set up.
 * Add the gbif-crowdin GitHub user to the project, with “Admin” rights
-* Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration (GitHub authentication will be required).
+* Use a private browser tab to log in to Crowdin, select the project, and add a new GitHub integration.  Use the “GitHub — gbif-crowdin” token from 1Password.
+* “Set Up Integration” → “Source and translations files mode”.
 ** Select the repository
 ** Select the branch
 ** Change the “Service Branch Name” to `translation_*branchname*` (thus avoiding the awkward abbreviation “i18n”)
+** Set “Always import new translations from the repository”.
 ** Set the Branch Configuration:
 *** Set the source to `/translations/index.pot`
 *** Set the translation to `/translations/%two_letters_code%.po`
