@@ -2,7 +2,7 @@
 
 UNLESS OTHERWISE NOTED, THE CONTENTS OF THIS DIRECTORY ARE LICENSED UNDER THE CREATIVE COMMONS ATTRIBUTION-SHAREALIKE 4.0 INTERNATIONAL LICENSE.
 
-image:https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png[CC0] image:https://creativecommons.org/images/deed/seal.png[Approved for Free Cultural Works]
+image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[CC-BY] image:https://creativecommons.org/images/deed/seal.png[Approved for Free Cultural Works]
 
 == License Summary of CC BY-SA 4.0 International
 
