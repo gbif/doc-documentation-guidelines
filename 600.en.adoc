@@ -22,6 +22,18 @@ Except for the primary file being called `index.en.adoc`, there are no hard rest
 ----
 <1> This file was presumably added later, between `200` and `300`.
 
+Another option is to include a brief heading in the filename, but using the number prefixes so the files are displayed (including for translation) in a sensible order:
+
+----
+├── index.en.adoc
+├── 0100-introduction.en.adoc
+├── 0200-elements-for-describing-a-location.en.adoc
+├── 0300-the-georeferencing-process.en.adoc
+├── 0400-collaborative-georeferencing.en.adoc
+├── 0500-sharing-data.en.adoc
+└── 0600-maintaining-data-quality.en.adoc
+----
+
 See the section on <<translation,translating documents>> when adding, changing or deleting document files.
 
 [asciidoc]
@@ -124,6 +136,15 @@ NOTE: Past trends are no guarantee of future performance
 ----
 
 _https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[Continue reading about admonitions and other block formatting in the AsciiDoctor User Guide]._  The guide also covers other formatting, such as bulleted or numbered lists, tables and images.
+
+==== Converting or importing an existing document
+
+There are tools to convert documents from other formats into AsciiDoctor markup.  The AsciiDoctor manual has a https://docs.asciidoctor.org/asciidoctor/latest/migrate/ms-word/[section for this] using command-line tools.  There are also online converters:
+
+* https://alldocs.app/convert-word-docx-to-asciidoc[MS Word (DOCX) to AsciiDoctor] (Google Documents can first be exported in MS Word format)
+* https://alldocs.app/convert-openoffice-odt-to-asciidoc[OpenOffice (ODT) to AsciiDoctor]
+
+Generally, manual review of tables, links, crossreferences and so on is required after the conversion.
 
 ==== GBIF extensions to AsciiDoctor
 
