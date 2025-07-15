@@ -244,6 +244,34 @@ To publish a document, go to the GitHub repository in a web browser.
 3. Review the document on https://docs.gbif-uat.org/, including the PDF.
 4. Use the GitHub interface to make a _release_.
 
+==== ‘Decommissioning’ versions
+
+How to version an existing GBIF AsciiDoctor document:
+
+Required sites:
+
+- Document repo on GitHub (e.g. https://github.com/gbif/doc-effective-nodes-guidance/)
+- Current (old) version of doc in production (e.g. https://docs.gbif.org/effective-nodes-guidance/1.0/en/)
+- New version of doc in UAT/test (e.g. https://docs.gbif-test.org/effective-nodes-guidance/1.0/en/)
+- https://zenodo.org[Zenodo^]
+- https://doi.datacite.org[DataCite Fabrica^]
+- Document page in Contentful (e.g. https://app.contentful.com/spaces/uo17ejk9rkwj/entries/80925)
+
+Procedure:
+
+Once you have an all-but-complete version of the document prepared in GitHub,
+
+. Download current PDF version of guide and all translations.
+. Create a new DRAFT DOI for a new version/edition of a document in DataCite Fabrica. NOTE: Include reference to expiring version in the final field, Related Items, with statement that the new version "Obsoletes" the older one.
+. Update document info on Contentful page with new DOI, retaining ref to previous version. 
+. Upload previous PDF(s) to Zenodo.
+. Update DataCite DOI entry for previous version (example: https://doi.datacite.org/dois/10.15468%2Fdoc-z79c-sa53), changing URL value from docs.gbif.org/etc reference to new Zenodo entry (example: https://zenodo.org/records/15522817), adding new DOI to `Include Related Items` field with the value of "Is obsoleted by". 
+. Update all DOI references in GitHub in colophon and README and add version/edition number to the citation reference.
+. Add reference to previous version in Document Control section of the colophon (https://docs.gbif.org/effective-nodes-guidance/1.0/en/#document-control[example]).
+. Create a release in GitHub to move new version to production.
+. Update URL in DataCite record of the new version to reflect production URL (example: https://docs.gbif.org/effective-nodes-guidance/1.0/en/)
+. Publish edited document page in Contentful to GBIF.org.
+
 === The documentation system software
 
 The documents combine several small Linux tools:
